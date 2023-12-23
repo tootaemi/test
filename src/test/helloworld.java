@@ -1,4 +1,4 @@
-package test;
+//package test;
 
 //文字を出力するプログラム
 //複数行出力するプログラム
@@ -8,13 +8,25 @@ package test;
 //私の名前は〇〇です
 //よろしくお願いします
 
-public class Main {
-    public static void main(String[] args) {
+//public class Main {
+//    public static void main(String[] args) {
         // ここにプログラムの処理を記述します
 //        System.out.println("Hello, world!"); // 例として文字列を出力してみます
 //    }
 //}
 
+
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, world!");
+    }
+}
+
+
+
+
+//
 //public class helloworld {　　//helloworld じゃなくてmainじゃないと表示できない！！
 //    public static void main(String args[]){    //Javaプログラムを実行するために必要な形式的なもの
 //	    System.out.println("hello world");
@@ -37,14 +49,14 @@ public class Main {
 //    	year = next_year *2;
 //    	year = year /2;
     	
-    	int mod;
-    	
-    	mod = 4%3;
+//    	int mod;
+//    	
+//    	mod = 4%3;
 ////    	
 ////    	double num;
 ////    	
 ////    	num = 5.0/2.0;
 //    	
-    	System.out.println(mod);
-	}
-}
+//    	System.out.println(mod);
+//	}
+//}
