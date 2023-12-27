@@ -1,4 +1,4 @@
-package test;
+package testtest;
 
 //文字を出力するプログラム
 //複数行出力するプログラム
@@ -15,13 +15,20 @@ package test;
 //    }
 //}
 
-public class helloWorld {
-	public static void main(String args[]){ 
+//package test;
+
+//public class Main {
 //    public static void main(String[] args) {
-		
+//        System.out.println("Hello, world...");
+//    }
+//}
+
+public class helloWorld {
+	public static void main(String args[]){ 		
         System.out.println("Hello, world.");
     }
 }
+
 
 //
 //public class helloworld {　　//helloworld じゃなくてmainじゃないと表示できない！！
