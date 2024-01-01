@@ -27,8 +27,11 @@ package test;
 //}
 
 public class study {
-	public static void main(String args[]){ 		
-      System.out.println("Hello, world.");
+	public static void main(String args[]){ 
+	    System.out.println("私の名前は遠田江美です");
+	    System.out.println("よろしくお願いします。");
+	    System.out.println(3*5);  //3*5
+	    System.out.println("Hello, world.");
   }
 }
 
