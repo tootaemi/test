@@ -1,6 +1,5 @@
 package test;
 
-//
 //package testtest;
 
 //文字を出力するプログラム
@@ -26,20 +25,20 @@ package test;
 //  }
 //}
 
+//public class main {
+//	public static void main(String args[]){ 
+//	    System.out.println("私の名前は遠田江美です");
+//	    System.out.println("よろしくお願いします。");
+//	    System.out.println(3*5);  //3*5
+//	    System.out.println("Hello, world.");
+//  }
+//}
+
+
 public class study {
-	public static void main(String args[]){ 
-	    System.out.println("私の名前は遠田江美です");
-	    System.out.println("よろしくお願いします。");
-	    System.out.println(3*5);  //3*5
-	    System.out.println("Hello, world.");
-  }
-}
-
-
-//
-//public class helloworld {　　//helloworld じゃなくてmainじゃないと表示できない！！
-//  public static void main(String args[]){    //Javaプログラムを実行するために必要な形式的なもの
-//	    System.out.println("hello world");
+//public class Main {　　//helloworld じゃなくてmainじゃないと表示できない！！
+	public static void main(String args[]){    //Javaプログラムを実行するために必要な形式的なもの
+	    System.out.println("hello world");
 //	    System.out.println("私の名前は遠田江美です");
 //	    System.out.println("よろしくお願いします。");
 //  	System.out.println(3*5);  //3*5
@@ -68,5 +67,7 @@ public class study {
 ////  	num = 5.0/2.0;
 //  	
 //  	System.out.println(mod);
-//	}
-//}
+	}
+}
+
+

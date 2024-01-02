@@ -8,6 +8,7 @@ package testtest;
 //私の名前は〇〇です
 //よろしくお願いします
 
+
 //public class Main {
 //    public static void main(String[] args) {
         // ここにプログラムの処理を記述します
