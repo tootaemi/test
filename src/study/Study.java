@@ -61,6 +61,7 @@ public class Study {
 	int year;
 
 	year = 2020;
+	year -= year;
 	
 	//+,-,*,/,%
 	//5わる2を正しく出力する
