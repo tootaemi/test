@@ -48,8 +48,7 @@ public class Study {
 	    System.out.println("よろしくお願いします。");
 	    System.out.println(3*5);  //3*5
 	    
-	}
-}
+
 
 //public class study {
 ////public class Main {　　//helloworld じゃなくてmainじゃないと表示できない！！
@@ -59,29 +58,35 @@ public class Study {
 //	    System.out.println("よろしくお願いします。");
 //	System.out.println(3*5);  //3*5
 //	
-//	int year;
-//	
-//	year = 2020;
+	int year;
+
+	year = 2020;
 	
 	//+,-,*,/,%
 	//5わる2を正しく出力する
 	
-//	int next_year;
+	int next_year;
 //	
-//	next_year = year +1;
-//	year = next_year -2;
+	next_year = year +1;
+	year = next_year -2;
 //	
-//	year = next_year *2;
-//	year = year /2;
+	year = next_year*2;
+	year = year /2;
 	
+    System.out.println(year);
+
+//	
 //	int mod;
-//	
-//	mod = 4%3;
 ////	
-////	double num;
+//	mod = 5%3;
 ////	
-////	num = 5.0/2.0;
+	double num;
+////	
+	num = 5.0/2.0;
 //	
-//	System.out.println(mod);
+	System.out.println(num);
 //	}
 //}
+
+	}
+}
