@@ -65,26 +65,26 @@ public class Study {
 	//+,-,*,/,%
 	//5わる2を正しく出力する
 	
-	int next_year;
-//	
-	next_year = year +1;
-	year = next_year -2;
-//	
-	year = next_year*2;
-	year = year /2;
+//	int next_year;
+////	
+//	next_year = year +1;
+//	year = next_year -2;
+////	
+//	year = next_year*2;
+//	year = year /2;
 	
-    System.out.println(year);
+//    System.out.println(year);
 
 //	
 //	int mod;
 ////	
 //	mod = 5%3;
 ////	
-	double num;
-////	
-	num = 5.0/2.0;
+//	double num;
+//////	
+//	num = 5.0/2.0;
 //	
-	System.out.println(num);
+	System.out.println("今年は"+ year +"です");
 //	}
 //}
 
