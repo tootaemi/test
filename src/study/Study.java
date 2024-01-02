@@ -41,12 +41,12 @@ public class Study {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-//		System.out.println("study");
-	    System.out.println("hello world");
-	    System.out.println("Hello Java");	    
-	    System.out.println("私の名前は遠田江美です");
-	    System.out.println("よろしくお願いします。");
-	    System.out.println(3*5);  //3*5
+////		System.out.println("study");
+//	    System.out.println("hello world");
+//	    System.out.println("Hello Java");	    
+//	    System.out.println("私の名前は遠田江美です");
+//	    System.out.println("よろしくお願いします。");
+//	    System.out.println(3*5);  //3*5
 	    
 
 
@@ -57,13 +57,16 @@ public class Study {
 //	    System.out.println("私の名前は遠田江美です");
 //	    System.out.println("よろしくお願いします。");
 //	System.out.println(3*5);  //3*5
-//	
-	int year;
-
-	year = 2020;
-
+////	
+//	int year;
+//    int next_year;
+//    
+//    year = 2020;
+//    next_year = year +1;
+//    
+//    int m = Math.min(year, next_year);   
 //	year++;  //year =year +1    
-	year--;
+//	year--;
 	
 	//+,-,*,/,%
 	//5わる2を正しく出力する
@@ -87,9 +90,15 @@ public class Study {
 //////	
 //	num = 5.0/2.0;
 //	
-	System.out.println("今年は"+ year +"です");
-//	}
-//}
-
+		
+		//文字列結合演算子
+		
+		System.out.println("あなたの名前は？");
+		String input1 = new java.util.Scanner(System.in).nextLine();      //文字列
+		
+		System.out.println("あなたの年齢は？");
+		int input2 = new java.util.Scanner(System.in).nextInt();        //整数
+		
+		System.out.println("こんにちは"+ input2 +"歳の" +input1 +"さん");
 	}
 }
