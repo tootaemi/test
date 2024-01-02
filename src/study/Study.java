@@ -93,12 +93,27 @@ public class Study {
 		
 		//文字列結合演算子
 		
-		System.out.println("あなたの名前は？");
-		String input1 = new java.util.Scanner(System.in).nextLine();      //文字列
+//		System.out.println("あなたの名前は？");
+//		String input1 = new java.util.Scanner(System.in).nextLine();      //文字列
+//		
+//		System.out.println("あなたの年齢は？");
+//		int input2 = new java.util.Scanner(System.in).nextInt();        //整数
+//		
+//		System.out.println("こんにちは"+ input2 +"歳の" +input1 +"さん");
 		
-		System.out.println("あなたの年齢は？");
-		int input2 = new java.util.Scanner(System.in).nextInt();        //整数
-		
-		System.out.println("こんにちは"+ input2 +"歳の" +input1 +"さん");
+		//課題2
+	    System.out.println(1+1);  //1+1
+	    System.out.println(2-2);  //2-2
+	    System.out.println(3*3);  //3*3
+	    System.out.println(4/4);  //4/4
+
+	    int a = 2;
+	    int b = 9;
+	    int m = Math.max(a, b); // 二つの値を比較して大きい方を取得する
+	    
+//	    int m = Math.max(2,0,9,1);
+	    
+	    System.out.println("大きいのは" + m + "です");
+	    
 	}
 }
