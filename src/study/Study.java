@@ -50,6 +50,7 @@ public class Study {
 }
 
 
+
 //public class study {
 ////public class Main {　　//helloworld じゃなくてmainじゃないと表示できない！！
 //	public static void main(String args[]){    //Javaプログラムを実行するために必要な形式的なもの
