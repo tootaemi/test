@@ -110,10 +110,8 @@ public class Study {
 	    int a = 2;
 	    int b = 9;
 	    int m = Math.max(a, b); // 二つの値を比較して大きい方を取得する
+//	    int m = Math.max(2,0,9,1);  //これは違うと思う。。
 	    
-//	    int m = Math.max(2,0,9,1);
-	    
-	    System.out.println("大きいのは" + m + "です");
-	    
+	    System.out.println("大きいのは" + m + "です");   
 	}
 }
