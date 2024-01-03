@@ -1,18 +1,29 @@
-//package Self-study;
+package test;
 
 public class Self {
-
- static void main(String[] args) {
-
+	public static void main(String[] args) {    //Javaプログラムを実行するために必要な形式的なもの
+	//static void main(String[] args) {    
+		
+		System.out.println("Hello, world!");
+	    System.out.println("私の名前は遠田江美です");
+	    System.out.println("よろしくお願いします。");
+	    System.out.println(1+1);  //2
+	    System.out.println("6-1");  //6-1
+	    System.out.println(3*5);  //3*5
 
 //文字を出力するプログラム
 //複数行出力するプログラム
-//演算を行うプログラム
+//演算を行うプログラム ""←これ不要　””これを囲むのはその文字を出力する為のもの
 
-//hello world
+	    
+//Hello world!
 //私の名前は〇〇です
 //よろしくお願いします
 
+	    
+	    
+	    
+	    
 //public class Main {
 //public static void main(String[] args) {
     // ここにプログラムの処理を記述します
@@ -52,7 +63,7 @@ public class Self {
 
 //public class study {
 ////public class Main {　　//helloworld じゃなくてmainじゃないと表示できない！！
-//	public static void main(String args[]){    //Javaプログラムを実行するために必要な形式的なもの
+//	public static void main(String args[]){    
 
 //	    System.out.println("私の名前は遠田江美です");
 //	    System.out.println("よろしくお願いします。");
@@ -101,17 +112,17 @@ public class Self {
 //		
 //		System.out.println("こんにちは"+ input2 +"歳の" +input1 +"さん");
 		
-		//課題2
-	    System.out.println(1+1);  //1+1
-	    System.out.println(2-2);  //2-2
-	    System.out.println(3*3);  //3*3
-	    System.out.println(4/4);  //4/4
-	    
-	    int a = 2;
-	    int b = 9;
-	    int m = Math.max(a, b); // 二つの値を比較して大きい方を取得する
-//	    int m = Math.max(2,0,9,1);  //これは違うと思う。。
-	    
-	    System.out.println("大きいのは" + m + "です");   
+//		//課題2
+//	    System.out.println(1+1);  //1+1
+//	    System.out.println(2-2);  //2-2
+//	    System.out.println(3*3);  //3*3
+//	    System.out.println(4/4);  //4/4
+//	    
+//	    int a = 2;
+//	    int b = 9;
+//	    int m = Math.max(a, b); // 二つの値を比較して大きい方を取得する
+////	    int m = Math.max(2,0,9,1);  //これは違うと思う。。
+//	    
+//	    System.out.println("大きいのは" + m + "です");   
 	}
 }
