@@ -162,58 +162,13 @@ public class Self {
 //         
 //		・キーボードで1行の整数の入力を受け付ける
 //		int input = new java.util.Scanner(System.in).nextLine();
-		
-		System.out.println("あなたの名前は？");
-		String input1 = new java.util.Scanner(System.in).nextLine();    //文字列
-		System.out.println("あなたの年齢は？");
-		int input2 = new java.util.Scanner(System.in).nextInt();        //整数
-		
-		System.out.println("こんにちは" + input2 + "歳の" + input1 + "さん");
-		
-		
-		
-		
-		
-		
-		
-		
-		
-//    int m = Math.min(year, next_year);   
-//	year++;  //year =year +1    
-//	year--;
-	
-	//+,-,*,/,%
-	//5わる2を正しく出力する
-	
-//	int next_year;
-////	
-//	next_year = year +1;
-//	year = next_year -2;
-////	
-//	year = next_year*2;
-//	year = year /2;
-	
-//    System.out.println(year);
-
-//	
-//	int mod;
-////	
-//	mod = 5%3;
-////	
-//	double num;
-//////	
-//	num = 5.0/2.0;
-//	
-		
-		//文字列結合演算子
-		
-//		System.out.println("あなたの名前は？");
-//		String input1 = new java.util.Scanner(System.in).nextLine();      //文字列
 //		
+//		System.out.println("あなたの名前は？");
+//		String input1 = new java.util.Scanner(System.in).nextLine();    //文字列
 //		System.out.println("あなたの年齢は？");
 //		int input2 = new java.util.Scanner(System.in).nextInt();        //整数
 //		
-//		System.out.println("こんにちは"+ input2 +"歳の" +input1 +"さん");
+//		System.out.println("こんにちは" + input2 + "歳の" + input1 + "さん");
 		
 //		//課題2
 //	    System.out.println(1+1);  //1+1
@@ -225,7 +180,7 @@ public class Self {
 //	    int b = 9;
 //	    int m = Math.max(a, b); // 二つの値を比較して大きい方を取得する
 ////	    int m = Math.max(2,0,9,1);  //これは違うと思う。。
-//	    
-//	    System.out.println("大きいのは" + m + "です");   
+//	    System.out.println("大きいのは" + m + "です");  
+		 
 	}
 }
