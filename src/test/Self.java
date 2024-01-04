@@ -120,17 +120,64 @@ public class Self {
 //		 System.out.println("今年は" + year + "です");      
 //		
 		//インクリメント、デクリメント演算子　　2種類あり＋＋かーーになる。
-		    int year;
-			 year = 2020;    
-			 year ++;    //year = year +1　と同じ働きになる。＋＋だと1プラスするという意味になる。  今年は2021ですと表示
-//			 year --;  //今年は2019ですと表示
-			 
-			 System.out.println("今年は" + year + "です"); 
-		 
+//		    int year;
+//			 year = 2020;    
+//			 year ++;    //year = year +1　と同じ働きになる。＋＋だと1プラスするという意味になる。  今年は2021ですと表示
+//		     year --;  //今年は2019ですと表示		 
+//			 System.out.println("今年は" + year + "です"); 
 		 
 		
+		//命令実行文  javaが元々準備してくれている様々な命令を呼び出す文
+//		 ・文字列を出力して改行
+//		 System.out.println();
+//		 
+//		 ・文字列を出力
+//		System.out.print();
+//		 
+//		 ・比較して大きい数字を代入する   //aとbの大きい方をmに代入すると言った意味
+//		 int m = Math.max(a,b);     //int m でmのデータ型 int の変数を準備してmath.max aとbで
+//		                             //このaとbの大きい方をmに代入するといった命令になる。
+//		
+//		 ・比較して小さい数字を代入する    //aとbの小さい方をmに代入するといった命令になる。
+//		 int m Math.min(a,b);
+//		
+//		int year;
+//		int next_year;
+//		
+//		year =2020;
+//		next_year = year +1;    //2021になってるはず
+//		
+////		int m = Math.max(year, next_year); //どちらが大きいかというのを出力するプログラム
+//		                                   //year, next_yearで大きい方がmに格納されている。
+//		int m = Math.min(year, next_year);    
+////		                                     
+////		 System.out.println("大きいのは" + m + "です");  //大きいのは2021ですという風に大きい方が出力される。
+//		 System.out.println("小さいのは" + m + "です");  //小さいのは2020ですという風に大きい方が出力される。
 		
-	    
+//		
+//		・キーボードで1行の文字列の入力を受け付ける
+//		String input = new java.util.Scanner(System.in).nextLine();
+//		左側のString型の変数名inputの変数を用意して右側でこのキーボードからの入力を受け付けるというイメージ。
+//         キーボードからの入力をプログラミングでは標準入力という。　『標準入力』という言葉は覚える！
+//         
+//		・キーボードで1行の整数の入力を受け付ける
+//		int input = new java.util.Scanner(System.in).nextLine();
+		
+		System.out.println("あなたの名前は？");
+		String input1 = new java.util.Scanner(System.in).nextLine();    //文字列
+		System.out.println("あなたの年齢は？");
+		int input2 = new java.util.Scanner(System.in).nextInt();        //整数
+		
+		System.out.println("こんにちは" + input2 + "歳の" + input1 + "さん");
+		
+		
+		
+		
+		
+		
+		
+		
+		
 //    int m = Math.min(year, next_year);   
 //	year++;  //year =year +1    
 //	year--;
