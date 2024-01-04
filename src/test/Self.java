@@ -4,71 +4,31 @@ public class Self {
 	public static void main(String[] args) {    //Javaプログラムを実行するために必要な形式的なもの
 	//static void main(String[] args) {    
 		
-		System.out.println("Hello, world!");
-	    System.out.println("私の名前は遠田江美です");
-	    System.out.println("よろしくお願いします。");
-	    System.out.println(1+1);  //2
-	    System.out.println("6-1");  //6-1
-	    System.out.println(3*5);  //3*5
+//		System.out.println("Hello, world!");
+//	    System.out.println("私の名前は遠田江美です");
+//	    System.out.println("よろしくお願いします。");
+//	    System.out.println(1+1);  //2
+//	    System.out.println("6-1");  //6-1
+//	    System.out.println(3*5);  //3*5
 
 //文字を出力するプログラム
 //複数行出力するプログラム
 //演算を行うプログラム ""←これ不要　””これを囲むのはその文字を出力する為のもの
 
-	    
 //Hello world!
 //私の名前は〇〇です
 //よろしくお願いします
 
+//課題1
+//私の名前は〇〇です
+//1たす1は（2）です。
+//4わる2は（2）です。
+
+	    System.out.println("私の名前は遠田江美です。");
+	    System.out.println("1たす1は2です。");
+	    System.out.println("4わる2は2です。");
+	  
 	    
-	    
-	    
-	    
-//public class Main {
-//public static void main(String[] args) {
-    // ここにプログラムの処理を記述します
-//    System.out.println("Hello, world!"); // 例として文字列を出力してみます
-//}
-//}
-
-//package test;
-
-//public class Main {
-//public static void main(String[] args) {
-//    System.out.println("Hello, world...");
-//}
-//}
-
-//public class main {
-//	public static void main(String args[]){ 
-//	    System.out.println("私の名前は遠田江美です");
-//	    System.out.println("よろしくお願いします。");
-//	    System.out.println(3*5);  //3*5
-//	    System.out.println("Hello, world.");
-//}
-//}
-
-
-//public class Study {
-
-//	public static void main(String[] args) {
-////		System.out.println("study");
-//	    System.out.println("hello world");
-//	    System.out.println("Hello Java");	    
-//	    System.out.println("私の名前は遠田江美です");
-//	    System.out.println("よろしくお願いします。");
-//	    System.out.println(3*5);  //3*5
-	    
-
-
-//public class study {
-////public class Main {　　//helloworld じゃなくてmainじゃないと表示できない！！
-//	public static void main(String args[]){    
-
-//	    System.out.println("私の名前は遠田江美です");
-//	    System.out.println("よろしくお願いします。");
-//	System.out.println(3*5);  //3*5
-////	
 //	int year;
 //    int next_year;
 //    
