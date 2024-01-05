@@ -18,18 +18,16 @@ public class Shosinsha1 {
 //		・繰り返し⇨何回も繰り返す処理を実行することができる。
 //		例））20回行いたい処理があったり100回行いたい処理があれば
 //		繰り返し構造を用いることで何度も繰り返しの処理が行える。
-	
+//	
+//		・分岐
+//		if(条件式) {
+//			処理
+//		}
+//		else {
+//			処理
+//		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		//制御構造
-		
+				
 //		int age;
 //		
 ////		age = 22; //大人が表示される
@@ -95,16 +93,16 @@ public class Shosinsha1 {
 	//評価後の値がtureかfaiseになればいいので
     //nameでもできる。
 		
-		String name;
-		name = "emi"; 
-		
-		if(name.equals("emi")){      //文字列を使う場合は＝＝が使えない このように書く←
-			//if(name.equals("em")){　この場合は名前が違うのでhelloと表示される。 
-			System.out.println("こんにちはemiさん");
-			}
-		else {
-			System.out.println("hello");   //上の場合でなかったらhello示する。
-			}
+//		String name;
+//		name = "emi"; 
+//		
+//		if(name.equals("emi")){      //文字列を使う場合は＝＝が使えない このように書く←
+//			//if(name.equals("em")){　この場合は名前が違うのでhelloと表示される。 
+//			System.out.println("こんにちはemiさん");
+//			}
+//		else {
+//			System.out.println("hello");   //上の場合でなかったらhello示する。
+//			}
 		}
 	}
 //このように条件式は値がfalseのブーリアン型になればいいので
