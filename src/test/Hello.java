@@ -60,36 +60,54 @@ public class Hello {
 //        
 //        データ型[][]= new データ型[行数][列数]
         
-        int [][] score = new int[2][5];
+//        int [][] score = new int[2][5];
+//        
+//        score[0][0] = 98;      //1人目
+//        score[0][1] = 96;
+//        score[0][2] = 95;
+//        score[0][3] = 89;
+//        score[0][4] = 78;
+//        
+//        score[1][0] = 92;       //2人目
+//        score[1][1] = 90;
+//        score[1][2] = 89;
+//        score[1][3] = 85;
+//        score[1][4] = 79;
         
-        score[0][0] = 98;      //1人目
-        score[0][1] = 96;
-        score[0][2] = 95;
-        score[0][3] = 89;
-        score[0][4] = 78;
         
-        score[1][0] = 92;       //2人目
-        score[1][1] = 90;
-        score[1][2] = 89;
-        score[1][3] = 85;
-        score[1][4] = 79;
+        //メソッド
+    	
+    	
+    	hello();
+    	hello();
+    }
+    public static void hello() {
+    	System.out.println("Hello, world!");
+//    	System.out.println("こんにちは");
+    	System.out.println("こんばんは");
+
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    }
+
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        }
-    
+   
