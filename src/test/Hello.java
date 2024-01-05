@@ -43,22 +43,36 @@ public class Hello {
 //        System.out.println(average); //89
 
         
-        int [] score1 = {92,94,99,98,97};
-        int [] score2;
+//        int [] score1 = {92,94,99,98,97};
+//        int [] score2;
+//        
+//        score2 = score1;
+//        score2[0] = 88;
+//        
+//        System.out.println(score1[0]);
+//        
+//        
+//        
+//        ・多次元配列
+//        
+//        ・2次元配列
+//        int[][]scores=new int[4][4];
+//        
+//        データ型[][]= new データ型[行数][列数]
         
-        score2 = score1;
-        score2[0] = 88;
+        int [][] score = new int[2][5];
         
-        System.out.println(score1[0]);
+        score[0][0] = 98;      //1人目
+        score[0][1] = 96;
+        score[0][2] = 95;
+        score[0][3] = 89;
+        score[0][4] = 78;
         
-        
-        
-        
-        
-        
-        
-        
-        
+        score[1][0] = 92;       //2人目
+        score[1][1] = 90;
+        score[1][2] = 89;
+        score[1][3] = 85;
+        score[1][4] = 79;
         
         
         }
