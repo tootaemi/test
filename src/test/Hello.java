@@ -77,37 +77,41 @@ public class Hello {
         
         //メソッド
     	
-    	
-    	hello();
-    	hello();
-    }
-    public static void hello() {
-    	System.out.println("Hello, world!");
-//    	System.out.println("こんにちは");
-    	System.out.println("こんばんは");
+//    	
+//    	hello();
+//    	hello();
+//    }
+//    public static void hello() {
+//    	System.out.println("Hello, world!");
+////    	System.out.println("こんにちは");
+//    	System.out.println("こんばんは");
 
     	
+    	//引数
+    	//引数の利用
+    	//・任意の人の名前を出力するメソッドを作りたい。どうすろ？
+    	//（出力例）こんにちは、（名前）さん。
+    	
+    	//public static void hello(String name) {
+    		//System.out.println("こんにちは、"+name +"さん。");	
+    	//}
+    	//Public static void main(String args[]) {
+    		
+    	
+    	              //実行結果
+    	//hello("太郎")  //こんにちは、太郎さん。        
+    	//hello("花子")  //こんにちは、花子さん。
+    	//hello("次郎")  //こんにちは、次郎さん。
+    	
+    	//}
     	
     	
     	
-    	
-    	
-    	
-    	
-    	
+    
     	
     	
     }
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        }
+}
+    
+    
    
