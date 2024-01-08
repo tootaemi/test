@@ -1,12 +1,15 @@
 package test;
-
 public class Selfstudy {
 	public static void main(String[] args) {
-//		if (args.length != 0) {
-		System.out.println("emi");
-		//System.out.println("Hello");     //「Hello」という名前のクラス
-		}
-	}
+//		String str = "Hello!";
+//		System.out.println(str);
+		//int num =10;
+		//System.out.println(num);   //10が表示される
+////		if (args.length != 0) {
+		//System.out.println("emi");
+//		//System.out.println("Hello");     //「Hello」という名前のクラス
+		//}
+	//}
 
 
 //1、javaの概要
@@ -87,13 +90,87 @@ public class Selfstudy {
 //
 
 
+//2、変数、データ型、演算子
+//2-1 変数と宣言方法
+//
+//public class Selfstudy {
+//	public static void main(String[] args) {
+		//int num;     //変数の宣言
+		//num =10;     //変数の初期化
+//	}
+//}
+
+//	public static void main(String[] args) {
+//		int num =10;
+//		System.out.println(num);   //10が表示される
+
+//※変数は使う前に必ず初期化しておく必要がある。
+//初期化していない変数を使おうとするとコンパイルエラーになる。
+
+//文字列を扱うString型
+//String型はメモリーが許す限り文字数を扱える。
+//char型は1文字しか扱えない。
+//
+//構文　String型の変数の宣言
+//String 変数名 = "文字列";
+//文字列は必ず「”」で囲む。
+
+//String str = "Hello!";    //String型の変数strを宣言し「Hello」で初期化
+//System.out.println(str);  //strに代入されている「Hello!」を表示
+//
+//※　文字、、、1文字しか扱えない。データ型はchar
+//　文字列、、、何文字でも扱える。データ型はString
+// 
+// 定数の宣言
+// 定数とは値を変更できない変数のこと。
+// 
+// 2-2　算術演算子
+// 演算子　　使用例　　　意味
+// +        a + b　　足し算
+// -        a - b    引き算
+// *        a * b    掛け算
+// /        a / b    割り算
+// %        a % b    aをbで割った余り
+
+		//int a = 10;  //aを10で初期化
+		//int b = 20;  //bを20で初期化
+		//int c = a + b;  //aとbの値を足した結果をcに代入
+		//System.out.println(c);  //cの値を表示→30が表示
+		//}
+	//}
+		
+		//int a = 10;
+		//System.out.println(a % 3);  //aの値を3で割った余りを表示→1
+		//}
+	//}	
+		
+	//文字列演算子
+	//⇨2つ以上の文字列があった時にそれらを＋演算子で足して文字列を1つに繋げること。
+		
+	//String a = "Hello, ";  //カンマに後ろはスペースを1つ入れる
+	//String b = "Java";
+	//String result = a + b + "!";  //文字列を連結しresultに代入
+	//System.out.println(result);   //連結された1つの文字列を表示
+//	}                             //Hello, Java!を表示
+//}
+
+//インクリメント、デクリメント
+//int a = 10;
+//int b = 10;
+//a = a + 1;    a++;  //変数aの値は11になる
+//b = b - 1;    b--;  //変数bのあたいは9になる
+
+//インクリメント演算子「++」
+//デクリメント演算子「--」	
+
+			int a = 10;
+			int b = a++;
+			int c = ++a;
+			System.out.println(b);   //10　後置のインクリメント
+			System.out.println(c);   //12　前置のインクリメント
+	}
+}
 
 
-
-
-
-
-
-
-
-
+		
+			
