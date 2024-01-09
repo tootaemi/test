@@ -1,4 +1,7 @@
 package test;
+
+import java.io.Console;
+
 //public class Selfstudy {
 	//public static void main(String[] args) {
 //		String str = "Hello!";
@@ -223,14 +226,100 @@ package test;
 //				コピーしておいた元の値を戻す。
 //			　　　⇨10を4で割った時の余りを求めるという式になる。
 //				
-//				
 //	}
 //}
 
+//		3、条件分岐
+//		処理の流れを分岐する「条件分岐」について学ぶ。
+//		条件によって分岐するif文
+//		合致する値によって分岐するswitch文がある。
+//		条件を組み合わせて使うための論理演算子や条件分岐を制御するキーワードの使い方について学ぶ。
+//		
+//		3-1
+//		読みやすいコードを書くために
+//		・順次、分岐、反復の3つの構文を組み合わせた「構造化プログラミング」主流。
+//		・誰が読んでも理解しやすいコードにするために
+//		　構造化プログラミングの原則に従ってコードを書く。
 		
-		
-		
-		
-		
-		
-		
+//		・順次、、、上から下に向かって順番にコードを書く。
+//		・分岐、、、条件を指定して、プログラムの流れを分岐する。
+//		・反復、、、条件を指定して条件に合致する間、プログラムを繰り返す。
+//		
+//		3-2
+//	　if文を使った条件分岐
+//	 
+//	 ・if文は、条件に一致するかしないかによって処理を分岐する構文。
+//	 ・else,else ifを追加して分岐を増やす。
+//	 ・論理演算子を使うと、複数の条件を組み合わせることができる。
+//	 
+//	 if文の基本的な構文
+//	 if (条件) {
+//		 条件に一致した時に実行したい処理
+//	 }
+//
+//public class Selfstudy {
+//	public static void main(String[] args) {
+//		if (true) {
+//			System.out.println("Hello");   //Hello表示
+//		}
+//	}
+//}
+//		public class Selfstudy {
+//			public static void main(String[] args) {
+//				if (false) {
+//					System.out.println("Hello");    //falseに記述すると常に条件が
+//					                               //一致しないため267行目のコードが実行されることはない。
+//
+//				}
+//			}
+//		}
+//
+//比較演算子
+//
+//演算子　　　　　意味　　　　　　　例　　　　　　　　説明
+//>          より大きい　　　　a > b     　aがbよりも大きければtrue
+//>=         以上　　　　　　　a >= b      aがb以上であればtrue
+//<          より小さい　　　　a < b       aがbよりも小さければtrue
+//<=         以下　　　　　　　a <= b　　　　aがb以下であればtrue
+//== 　　　　　等しい          a == b　　　　aとbが等しければtrue
+//!=         等しくない       a != b 　　　　aとbが等しくなければtrue
+
+//			public class Selfstudy {
+//				public static void main(String[] args) {
+//					int a = 10;
+//					int b = 20;
+//					boolean result = a < b;       //aよりもbが大きいか調べ結果をresultに代入
+//					System.out.println("result");   //trueが表示⇨result表示されてしまうなぜ、、
+//					}
+//				}
+			
+//			
+//			比較演算子を使って処理を分岐する。
+//			下記は、変数aの値が10よりも大きければコンソールに「大きい」と表示する。
+//			
+
+//			public class Selfstudy {
+//				public static void main(String[] args) {
+//					int a = 20;
+//					if (10 < a) {     
+//					System.out.println("大きい");    //大きいが表示される。
+//					}
+//				}
+//			}
+//上記のままでは変数aの値が固定されているのであまり実感がない。
+
+
+
+			public class Selfstudy {
+				public static void main(String[] args) throws Exception{
+					Console console = System.console();
+					int a = Integer.parseInt(console.readLine());
+					if (10 < a) {
+						System.out.println("大きい");
+						}
+					}
+				}
+			
+			//P71
+			
+			
