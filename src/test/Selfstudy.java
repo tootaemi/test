@@ -1,6 +1,6 @@
 package test;
-public class Selfstudy {
-	public static void main(String[] args) {
+//public class Selfstudy {
+	//public static void main(String[] args) {
 //		String str = "Hello!";
 //		System.out.println(str);
 		//int num =10;
@@ -162,15 +162,75 @@ public class Selfstudy {
 
 //インクリメント演算子「++」
 //デクリメント演算子「--」	
+		
+		//前置、後置では動作が異なる。
 
-			int a = 10;
-			int b = a++;
-			int c = ++a;
-			System.out.println(b);   //10　後置のインクリメント
-			System.out.println(c);   //12　前置のインクリメント
-	}
-}
-
+//			int a = 10;
+//			int b = a++;
+//			int c = ++a;
+//			System.out.println(b);   //10　後置のインクリメント
+//			System.out.println(c);   //12　前置のインクリメント
+			
+//			int a = 10;
+//			int b = ++a;
+//			System.out.println(b);      //11が表示される。
+		
+		//175行目、インクリメント演算子を前置している。
+		//変数aの値に1を加えた後その値が変数bに代入される。
+		//そのため176行目では11が表示される。
+		
+		//一方、次のコードのように後置した場合、
+		//変数aの値に1を加えた後,変更前の値が変数bに代入される。
+		
+			//int a = 10;
+			//int b = a++;
+			//System.out.println(b);      //10
+			//System.out.println(a);      //11
+		
+	//このような結果になるのはインクリメント演算子やデクリメント演算子を後置した場合
+	//次のような順で動作するから。（説明はインクリメントの場合）
+	
+	//①変数の値をコピー
+	//②変数の値を増やす
+	//③①でコピーしておいた値を戻す
+	
+//	後置した場合、変更する前にとっておいたコピーが戻される。
+//	そのため、インクリメントやデクリメントの結果を代入している式の場合は、
+//	変更前の値が代入される。
+//	186行目では変更前の変数aの値である10をコピーしておいて
+//	変数aの値を11に増やし、その後コピーしておいた10を戻す。
+//	このため変数bには10が代入されることになる。
+//	前置しても後置しても、変数aの値が1つ増えることには変わりない。
+//	しかし、変数bに代入されるのが変更後の値（前置）なのか
+//	変更前の値（後置）なのかという点が異なる。
+//	
+//	
+//		①おさらい
+//		Q1.Javaのエディションではないもの
+//		Java DB
+//      JavaエディションはJava SE,Java EE, Java MEである。
+//		
+//		Q2.実行結果として正しいもの
+		
+//		public class Selfstudy {
+//			public static void main(String[] args) {
+//				int num = 10;
+//				int result = num++ % 4;
+//				System.out.println("result");
+//				
+//				インクリメント演算子は前置と後置で動作が異なる。
+//				後置した場合、変数の値をコピーした後に1増やし、
+//				コピーしておいた元の値を戻す。
+//			　　　⇨10を4で割った時の余りを求めるという式になる。
+//				
+//				
+//	}
+//}
 
 		
-			
+		
+		
+		
+		
+		
+		
