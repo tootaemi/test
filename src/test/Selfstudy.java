@@ -1,7 +1,5 @@
 package test;
 
-import java.io.Console;
-
 //public class Selfstudy {
 	//public static void main(String[] args) {
 //		String str = "Hello!";
@@ -309,17 +307,226 @@ import java.io.Console;
 //上記のままでは変数aの値が固定されているのであまり実感がない。
 
 
+//import java.io.Console;
+//			public class Selfstudy {
+//				public static void main(String[] args) throws Exception{
+//					Console console = System.console();
+//					int a = Integer.parseInt(console.readLine());
+//					if (10 < a) {
+//						System.out.println("大きい");
+//						}
+//					}
+//				}
+//上記はエラーになってしまう。(Macだから？Windowsじゃないとできないのかな？)
+//下記で動いたがコードをコンパイルしjavaコマンドを実行し数字を入力ができなかった。
+//		import java.util.Scanner;
+//			public class Selfstudy{
+//				public static void main(String[] args) {
+//					Scanner scanner = new Scanner(System.in);
+//					System.out.print("Enter something: ");
+//					String input = scanner.nextLine(); // ユーザーからの入力を受け取る
+//					System.out.println("You entered: " + input);
+//					scanner.close(); // 必要に応じてScannerをクローズする
+//				}
+//			}
+			
+//参考書通りなら
+//コードをコンパイルしjavaコマンド（java IfTest）を実行して
+//何か数字を入力してエンターキーを押す。
+//↓
+//> java IfTest     javaコマンドでIfTestクラスを実行
+//11                 「11」と入力しエンターキーを押す
+//大きい               10よりも大きいことを示す結果
 
-			public class Selfstudy {
-				public static void main(String[] args) throws Exception{
-					Console console = System.console();
-					int a = Integer.parseInt(console.readLine());
-					if (10 < a) {
-						System.out.println("大きい");
-						}
-					}
-				}
-			
-			//P71
-			
+//何か数字を入力してエンターキーを押すとその値が10よりも大きい時だけ「大きい」と表示されるはず。
+
+//IfTestクラスの実行時に入力できるのは数字だけ。
+//数字以外を入力するとエラーになるので数字だけを入力すること。
+//
+//分岐を増やす
+//条件に一致しなかった時の処理を記述するにはelseブロックを追する。
+//if-else文の基本的な構文は以下の通りです。
+//		if(条件) {
+//			条件に一致した時に実行したい処理
+//		}else {
+//			条件に一致しなかった時の処理
+//		}
+
+
+//			import java.io.Console;
+//
+//			public class Selfstudy {
+//				public static void main(String[] args) throws Exception{
+//					Console console = System.console();
+//					int a = Integer.parseInt(console.readLine());
+//					if (10 < a) {
+//						System.out.println("大きい");
+//					} else {
+//						System.out.println("小さい");
+//					}
+//				}
+//			}
+//10以下の数字を入力すると「小さい」と表示される。
+//これで条件に一致した時、一致しなかった時の処理を分岐させることができるようになった。
+//
+//今度は条件を増やす。
+//else ifブロックを追加する。
+//if else if-else文の基本的な構文⇩
+//
+//if(条件1) {
+//	条件1に一致した時に実行したい処理
+//} else if(条件2) {
+//	条件2に一致した時に実行したい処理
+//} else {
+//	条件に一致しなかった時の処理
+//}
+
+//
+//import java.io.Console;
+//
+//public class Selfstudy {
+//	public static void main(String[] args) throws Exception{
+//		Console console = System.console();
+//		int a = Integer.parseInt(console.readLine());
+//		if (10 < a) {
+//			System.out.println("大きい");
+//		} else if (a < 0){
+//			System.out.println("エラー");
+//		} else {
+//			System.out.println("小さい");
+//		}
+//	}
+//}
+//
+//else ifブロックを追加することで391行目の１つ目の条件に一致しなかった場合、
+//393~395行目のelse if ブロックで指定した２つ目の条件に合致するかどうか判断される。
+//もし条件に合致すれば「エラー」と表示され合致しなければ
+//395~397行目のelseブロックが実行されて「小さい」と表示される。
+
+//
+//論理演算子
+//演算子　　　意味　　　　　　　　例　　　　　　　　説明
+//&       　論理積（AND演算)　　　a % b    aとbが両方ともtrueの場合にtrue　（日本語で「AかつB」）
+//|       　論理和 (OR演算)     a | b    aとbの少なくとも1つがtrueの場合にtrue
+//!       　否定　　　　　 　　　　 !a     aがtrueの場合にfalse、aがfalseの場合にtrue
+
+
+//テストの点を調べるためのコード
+
+//import java.io.Console;
+//public class Selfstudy {
+//	public static void main(String[] args) throws Exception{
+//		Console console = System.console();
+//		int score = Integer.parseInt(console,readLine());
+//		if (0 < score & score <= 100) {　　//0以上でかつ100以下かどうか調べる
+//			System.out.println("範囲内です");
+//		} else {
+//			System.out.println("範囲外です");
+//		}
+//	}
+//}
+//
+//左辺と右辺の組み合わせと演算の結果（AND演算）
+//左辺　　　　右辺　　　　結果
+//true      true     true
+//true      false    false
+//false     true     false
+//false     false    false
+//
+//論理和「OR演算」
+//左右どちらかがtrueであればtrueを戻す。
+//日本語は「Aもしくは」
+
+//import java.io.Console;
+//
+//public class Selfstudy {
+//	public static void main(String[] args) throws Exception{
+//		Console console = System.console();
+//		int score = Integer.parseInt(console,readLine());
+//		if (score < 0 | 100 < score) {  //0よりも小さいかもしくは100よりも大きいかを調べる
+//			System.out.println("範囲内です");
+//		} else {
+//			System.out.println("範囲外です");
+//		}
+//	}
+//}
+
+//AND演算とは異なりOR演算は片方だけでもtrueがあればtrueを戻す。
+//演算子の左辺と右辺の組み合わせによって結果は次のようになる
+//結果のほとんどがfalseとなるAND演算と異なりほとんどがtrueとなるのが特徴。
+//
+//左辺と右辺の組み合わせと演算の結果（OR演算）
+//
+//左辺　　　　右辺　　　結果
+//true   true    true
+//true    false    true
+//false   true   true
+//false   false    false
+//
+//AND演算は左辺と右辺が両方ともtrueの時だけtrueとなり
+//OR演算は左辺と右辺が両方ともfalseの時だけfalseになる！
+
+
+//public class Selfstudy {
+//	public static void main(String[] args) throws Exception{
+//		int a = 1;
+//		int i = 4;
+//		if (a == 1 | i++ < 5) {   //左辺の比較演算の後に右辺を実行し、iの値は5になる
+//			                      //その後条件全体の結果を戻す。
+//			// do something
+//		}
+//		System.out.println(i);   //5を表示
+//	}
+//}
+//
+//public class Selfstudy {
+//	public static void main(String[] args) throws Exception{
+//		int a = 1;
+//		int i = 4;
+//		if (a == 1 || i++ < 5) {    //演算子を「||」に書き換え
+//			// do something
+//		}
+//		System.out.println(i);   //4を表示
+//	}
+//}
+//
+//ショートサーキット演算子「||」を使ってるため右辺の式は実行されない。
+//その結果、変数iの値がインクリメントされることはないため
+//コンソールで「4」が表示される。
+
+//できるだけシンプルに条件を組み合わせるようにしよう。
+
+
+//「&」「|」を2つ重ねて記述する。
+//・AND演算、、、、「＆＆」と記述し、左辺がfalseを戻す場合は右辺の演算を省略
+//・OR演算、、、、、「||」と記述し、左辺がtrueを戻す場合は右辺の演算を省略
+
+
+//public class Selfstudy {
+//	public static void main(String[] args) throws Exception{
+//		int a = 1;
+//		int i = 4;
+//		i++;                //論理演算の外にインクリメントを出しておく
+//		if (a == 1 || i < 5) {    //左辺がtrueを戻し、右辺の演算は省略
+//			}
+//		System.out.println(i);   //「5」を表示
+//		}
+//	}
+
+//このようにシンプルな論理演算であれば
+//ショートサーキット演算子を使った方が効率的に処理を進められる。
+
+
+p82〜
+中カッコの省略〜
+
+
+
+
+
+
+
+
+
+
 			
