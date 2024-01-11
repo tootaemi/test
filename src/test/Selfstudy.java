@@ -516,17 +516,150 @@ package test;
 //このようにシンプルな論理演算であれば
 //ショートサーキット演算子を使った方が効率的に処理を進められる。
 
+//
+//中カッコの省略
+//
+//if文では条件に合致した時の処理が一つしかない場合は
+//ブロックを表す中「｛｝」を省略することができる。
 
-p82〜
-中カッコの省略〜
+//import java.io.Console;
+//public class Selfstudy {
+//	public static void main(String[] args) throws Exception{
+//		
+//Console console = System.console();
+//int score = Integer.parseInt(console,readLine());
+//if (10 <  a)                       //←ifブロックの中カッコを省略している。
+//	System.out.println("大きい"); //←ifブロックの中カッコを省略している。
+//	}
+//}
+//
+//import java.io.Console;
+//
+//public class Selfstudy {
+//public static void main(String[] args) throws Exception{
+//Console console = System.console();
+//int score = Integer.parseInt(console,readLine());
+//if (10< a)
+//	System.out.println("大きい");      //分岐処理の対象になる
+//	System.out.println("常に実行される");   //分岐処理の対象にならない
+//
+//}
+//}
+
+//544行目のコードは条件に合致してもしなくても実行される。
+//if文では条件に合致した時の処理が１つしかない場合ブロックを表す｛｝を省略できる。
+//｛｝を省略した時の処理対象となるのはif文の条件式の直後にあるステートメントだけ。
+
+//ifブロックだけでなく、else ifブロックやelseブロックでも中カッコ｛｝を省略できる。
 
 
+プログラミングクイズ
+
+if文の空欄に入る条件式を、考えてみて下さい。
+ここのコードは後ほど書く。。
 
 
+//
+//
+//
+//3-3  switch文を使った条件分岐
+//・値によって処理を振り分ける
+//・値が合致するcaseがない場合のデフォルトよ処理にはdefaultキーワードを使う。
+//・breakキーワードを使ってswitch文を抜けるように命令する。
+//
+//Javaには、if文の他にswitch文が用意されている。
+//switch文の特徴は条件式ではなく値によって処理を振り分ける点。
+//例えば「1の場合はこう、2の場合ならこう、3の場合なら、、、、、」という具合に
+//値によって処理を振り分けることができる。
+//
+//switch文の式には、byte.char,short,int,enum（列挙型を表すデータ型）
+//
+//caseには値を記述する。
+//この値は、switchの式が戻す値に応じてどのような処理を行うのかを示すためのもの。
+//
+//
+//switch文の基本構文↓
+//switch（式）｛
+//case 値:
+//値に合致した時の処理
+//case 値:
+//値に合致した時の処理
+//｝
+//
+//下記のコードは
+//入力された数値が1の場合「one」
+//2の場合は「two」と表示する。
+//
+//
+//import java.io.Console;
+//public class Selfstudy {
+// public static void main(String[] args) throws Exception{
+//  Console console = System.console();
+//  int score = Integer.parseInt(console,readLine());
+//  switch (a) {
+//  case 1;
+//   System.out.println("one");
+//   break;
+//  case 2;
+//  System.out.println("two");
+//  break;
+//   }
+// }
+//}
+//
+//switch式が戻す値がどのcase式にも
+//合致しなかった場合は何も実行してされない。
+//そのdefaultキーワードを使ってデフォルトの処理を追加し
+//case式の値に合致しなかった場合でも何らかの処理が実行されるようにする。
+//
+//
+//import java.io.Console;
+//public class Selfstudy {
+// public static void main(String[] args) throws Exception{
+//  Console console = System.console();
+//  int score = Integer.parseInt(console,readLine());
+//  switch (a) {
+//  case 1;
+//   System.out.println("one");
+//   break;
+//  case 2;
+//  System.out.println("two");
+//  break;
+//  default;
+//  System.out.println("other");
+//  bresk;
+//   }
+// }
+//}
+//入力された数値が1の場合は「one」、2の場合は「two」、
+//それ以外は「other」が表示される。
+//
+//
+//・if文とswitch文の使い分け
+//どちらも特性の異なる分岐構文。
+//scoreの値が0以上100以下　のように式の結果がある程度の範囲を持ったり
+//特定の値に絞り込めないような場合にはif文の方が適してる。
+//一方、特定の値の時に何らかの処理をしたい場合式の結果の種類が
+//少ない場合にはswitch文が適している。
+//実際のソフトウェア開発では、特定の値に絞り込める状況よりも、
+//ある程度の範囲を持った条件の方が多いためif文の方が使う場面が多い。
+//
+//switch文を使う時の注意点
+//caseに合致した時の処理の最後にbreakと書かれてる。
+//breakは「そのブロックを抜けなさい」という命令です。
+//もしbreakがなかった場合breakが現れるまで
+//次々と順番に次のcaseの処理を、実行してしまう。
+//
+//「one」と表示した後
+//switch文を抜けることなく次のcaseの処理を実行する。
+//つまり「two」「other」と順に表示されてしまう。
+//もし「2」を入力すると「two」「other」と表示される。
+//3や4を入力すれば「other」とだけ表示される。
+//
+//このようにbreakを忘れるとswith文のブロックを抜けるまでの間
+//その後の処理も続けて実行されてしまうことを忘れないで。
+//breakを書かずに次々と順番にcaseの処理を実行することを「フォールスルー」と呼ぶ。
 
 
-
-
-
-
-			
+//②おさらい
+//p92~
