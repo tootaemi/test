@@ -552,11 +552,11 @@ package test;
 
 //ifブロックだけでなく、else ifブロックやelseブロックでも中カッコ｛｝を省略できる。
 
-
-プログラミングクイズ
-
-if文の空欄に入る条件式を、考えてみて下さい。
-ここのコードは後ほど書く。。
+//
+//プログラミングクイズ
+//
+//if文の空欄に入る条件式を、考えてみて下さい。
+//ここのコードは後ほど書く。。
 
 
 //
@@ -659,10 +659,98 @@ if文の空欄に入る条件式を、考えてみて下さい。
 //このようにbreakを忘れるとswith文のブロックを抜けるまでの間
 //その後の処理も続けて実行されてしまうことを忘れないで。
 //breakを書かずに次々と順番にcaseの処理を実行することを「フォールスルー」と呼ぶ。
-
-
+//
+//
 //②おさらい
-//p92~
+//
+//1.変数aの値が変数bの値より小さいことを表す式
+//→a < b
+//
+//2.Bを入力したらコンソールに何が表示される？
+//
+//
+//4、繰り返し構文
+//３つの構文はそれぞれ使い方が異なる。
+//4-1 for文を使った繰り返し
+//・for文では条件式がtrueを戻す限り、繰り返し処理を実行し続ける。
+//・初期化式、条件式、遷移式は省略可能だが;は省略できない。
+//・二重ループは内側のfor文をその意味で置き換えるとわかりやすくなる。
+//
+//
+//繰り返し構文
+//javaにはfor文、while文、do-whie文、拡張for文の4つの繰り返し構文がある。
+//
+////例1
+//public class  Selfstudy {
+//	public static void main(String[] args) {
+//		System.out.println(0);
+//		System.out.println(1);
+//		System.out.println(2);
+//		System.out.println(3);
+//		System.out.println(4);
+//	}
+//}
+//
+//
+//for文は繰り返し回数を指定してその回数分だけ同じ処理を繰り返す構文。
+//
+//例2はfor文を使って置き換えたもの
+//
+//例2
+//public class  Selfstudy {
+//	public static void main (String[] args) {
+//		for (int i = 0; i < 5; i++) {
+//		System.out.println(i);
+//		}
+//	}
+//}
+//コンパイプ、実行すると0.1.2.3.4と順に表示されるはず。
+//
+
+//例3
+//public class  Selfstudy {
+//public static void main (String[] args) {
+//	for (int i = 0; i < 11; i++) {
+//	System.out.println(i);
+//	}
+//}
+//}
+//繰り返しの上限を決めている部分で「条件式」と呼ぶ。
+//for文では条件式がtrueを戻す限り、繰り返し処理を実行する。
+//
+//例4
+//public class  Selfstudy {
+//public static void main (String[] args) {
+//	for (int i = 2; i < 11; i++) {
+//	System.out.println(i);
+//	}
+//}
+//}
+//
+//2〜10が表示されるように修正する。
+//修正一カ所のみ。
+//
+//
+//ここが最初の値を決めている部分で「初期化式」と呼ぶ。
+//
+//例5のコード後ほど書く
+public class  Selfstudy {
+public static void main (String[] args) {
+	for (int i = 2; i < 11; i =i + 2) {
+	System.out.println(i);
+	}
+}
+}
 
 
-
+//2.4.6.8.10と偶数だけ表示するように修正する。
+//
+//「i++」というインクリメントは「i ＝ i + 1」と同じ意味。
+//偶数だけ表示するには変数の値を2ずつ増やせばいい。
+//
+//for文は左から順に、初期化式、条件式、遷移式の３つで構成されてる。
+//３つの式の間はセミコロンで区切ることに注意。
+//
+//
+//構文　for文
+//
