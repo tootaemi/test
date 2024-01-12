@@ -1,7 +1,8 @@
 package test;
-
+//
 //public class Selfstudy {
-	//public static void main(String[] args) {
+//	public static void main(String[] args) {
+
 //		String str = "Hello!";
 //		System.out.println(str);
 		//int num =10;
@@ -733,18 +734,16 @@ package test;
 //
 //ここが最初の値を決めている部分で「初期化式」と呼ぶ。
 //
-//例5のコード後ほど書く
-public class  Selfstudy {
-public static void main (String[] args) {
-	for (int i = 2; i < 11; i =i + 2) {
-	System.out.println(i);
-	}
-}
-}
-
-
+////例5のコード後ほど書く
+//public class  Selfstudy {
+//public static void main (String[] args) {
+//	for (int i = 2; i < 11; i =i + 2) {
+//	System.out.println(i);
+//	}
+//}
+//}
 //2.4.6.8.10と偶数だけ表示するように修正する。
-//
+
 //「i++」というインクリメントは「i ＝ i + 1」と同じ意味。
 //偶数だけ表示するには変数の値を2ずつ増やせばいい。
 //
@@ -753,4 +752,71 @@ public static void main (String[] args) {
 //
 //
 //構文　for文
+//for (初期化式; 条件式; 遷移式) {
+//	繰り返し実行したい処理
+//}
 //
+//4-2　while文を使った繰り返し
+//・条件式がtrueを戻す限り、繰り返し処理を実行し続ける。
+//・繰り返しの回数が決まっていない場合に使うと便利。
+//
+//for文と同じように繰り返し処理を実行するための構文。
+//for文は繰り返しの上限を指定してた
+//while文は繰り返しの回数が決まっっていない時に使う。
+//
+//構文　while文
+//while (条件式) {
+//	繰り返し処理
+//}
+//条件式は真偽値（trueかfalse）そのものを記述するか
+//真偽値を戻す式でないといけない。
+//条件式がtrueを戻す限り繰り返し処理を続ける。
+//
+//下記のコード
+////条件式は固定の値となるため永遠に実行し続ける無限ループになる。
+////無限に「hello」が表示され続ける。
+//
+//while (true) {
+//	//System.out.println("hello");    //実行しないでほしい。
+//	}
+//}
+//}
+//
+//4-3　do-while文を使った繰り返し
+//・繰り返しの回数が決まっていない時に使うと便利。
+//・条件式が最後にあるため、必ず1回はdoブロック内の処理が実行される。
+//do-while文もwhile文と同じように繰り返し回数を指定していない繰り返し構文の1つ。
+//while文と異なるのは条件式の位置。
+//
+//構文 do-while文
+//do {
+//	繰り返し処理
+//} while(条件式);
+//
+//
+//while文では条件式が繰り処理よりも前にあったが
+//do-while文ではブロックがdoから始まり条件式が最後にある。
+//真偽値そのものか真偽値を戻す式でないとだめ。
+//
+//下記は無限ループを実現しているコード。
+//
+//public class Selfstudy {
+//	public static void main(String[] args) {
+//		do {
+//			System.out.println("hello");
+//		} while(true);
+//	}
+//}
+//条件式が後ろにあるためdo-while文には条件式の結果に関わらず
+//必ず1回は繰り返し処理が実行される。
+//これがwhile文と異なる点です。
+
+public class Selfstudy {
+	public static void main(String[] args) {
+		while (false) {
+		System.out.println("hello.");
+	}
+	}
+}
+
+
