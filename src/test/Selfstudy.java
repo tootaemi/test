@@ -810,13 +810,95 @@ package test;
 //条件式が後ろにあるためdo-while文には条件式の結果に関わらず
 //必ず1回は繰り返し処理が実行される。
 //これがwhile文と異なる点です。
+//
+//public class Selfstudy {
+//	public static void main(String[] args) {
+//		while (false) {
+//			System.out.println("hello.");
+//			}
+//	}
+//}
+//
+//do-while文の条件式は繰り返し処理よりも後に記述する。
+//817行目のコードは最低でも1回実行される。
+//条件式の結果のかからわず必ず1回は実行したい処理があるような繰り返し処理に行う構文。
+//
+//※do-while文の条件式は繰り返し処理よりも後に記述する。
+//このためdoブロックの処理は必ず1回は実行される。
+//
+//
+//4-4　繰り返しの制御
+//・breakはfor文やwhile文の繰り返し処理を中断し、処理がループから抜けるように制御する。
+//・continueは、繰り返し処理の最中に処理をスキップするように制御する。
 
-public class Selfstudy {
-	public static void main(String[] args) {
-		while (false) {
-		System.out.println("hello.");
-	}
-	}
-}
+//breakを使ってループから抜ける。
+//
+//public class Selfstudy {
+//	public static void main(String[] args) {
+//		for (int i = 1; i < 5; i++) {
+//			System.out.println("i");
+//			if ( i == 3 ) {
+//				break;
+//			}
+//		}
+//	}
+//}
+//
+//実行すると変数iの値が3になった時点でfor文のブロックを抜けてしまう。
+//そのため「123」と3つの数字が表示されるだけで4は表示されない。
+//
+//
+//continueで後の処理をスキップする。
+//スキップした後は、for文なら遷移式、
+//while文なら条件式に戻って処理を続けるかどうかを評価する。
+//
+//下記のコードはif文の条件式に一致した時continueを使って
+////System.out.println(",");このコードの処理をスキップしている。
+//
+//public class Selfstudy {
+//	public static void main(String[] args) {
+//		for (int i = 0; i < 10; i++) {
+//			System.out.println("i");
+//			if ( 8 < i ) {
+//				continue;
+//			}
+//			System.out.println(",");
+//		}
+//	}
+//}
+//このコードを実行すると「0、1、2、3、4、5、6、7、8、9」という具合に
+//数字がカンマ「、」で区切られて表示されるが最後だけはカンマ「、」がない。
+//もし、if文を削除して860から866を下記のコードに書き換えると9の後ろにもカンマがつく。
+//
+//for (int i = 0; i < 10; i++) {
+//	System.out.println("i");
+//	System.out.println(",);
+//}	
+//
+//「変数iの値が8より大きい場合という条件に合致すればcontinueする」
+//というコードを加えることで変数iの値が9になるとカンマをコンソールに出力するコード
+//⇨ System.out.println(",");
+//が、スキップされる。そのため9の後ろにだけカンマがない。
+//
+//breakとcontinueを使うことで繰り返し構文をさらに自在に操れるようになれる。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
