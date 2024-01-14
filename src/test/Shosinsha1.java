@@ -188,7 +188,7 @@ public class Shosinsha1 {
 //		
 		
 		
-        // 九九の計算
+        // 3-1,九九の計算
 
         
         for (int i = 1; i <= 9; i++) {
@@ -199,17 +199,16 @@ public class Shosinsha1 {
             System.out.println(); // 次の段へ移るための改行
         }
      
+        //3-2
+        
         for(int i = 1; i <= 100; i++){
         if(i % 5 == 0 || i % 3 == 0){
         if(i % 15 != 0){
         System.out.println(i);
         }
-        }
-        }
-        
-        
-        
-		}
-		
-		
-	} 
+      }
+    }    
+   }
+} 
+
+
