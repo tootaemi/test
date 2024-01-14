@@ -2,7 +2,7 @@ package test;
 
 public class Hello {
     public static void main(String[] args) {
-        //System.out.println("Hello, world!");
+        System.out.println("Hello, world!");
         
         
 //        ・配列の仕組み
@@ -170,20 +170,20 @@ public class Hello {
     			//}
     			
     			
-    			
-    			int x=10;
-    			int y=10;
-    			
-    			int answer = add(x,y);
-    			
-    			System.out.println(answer);
-    			
-    		}
-    		
-    		public static int add (int num1,int num2) {
-    			
-    			int sum = num1 + num2;
-    			return sum;
+//    			
+//    			int x=10;
+//    			int y=10;
+//    			
+//    			int answer = add(x,y);
+//    			
+//    			System.out.println(answer);
+//    			
+//    		}
+//    		
+//    		public static int add (int num1,int num2) {
+//    			
+//    			int sum = num1 + num2;
+//    			return sum;
     			
     		}      //18が実行されるはず
     	}
