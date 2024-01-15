@@ -40,12 +40,24 @@ public class Selfstudy3 {
 		        
 		
 		//計算の文
-		int a;
-		int b;
-		a = 20;
-		b = a + 5;
-		System.out.println( a );    //20
-		System.out.println( b );    //25
+//		int a;
+//		int b;
+//		a = 20;
+//		b = a + 5;
+//		System.out.println( a );    //20
+//		System.out.println( b );    //25
+		
+		
+		int a = 10;
+		int b = a++;
+		a = 10;
+		int c = ++a;
+		System.out.println( "変数bは" + b );  //変数bは10
+		System.out.println( "変数cは" + c );  //変数bは11
+
+		
+
+		
 		
 		
 		
