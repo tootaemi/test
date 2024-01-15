@@ -2,10 +2,43 @@ package test;
 
 public class Selfstudy3 {
 	public static void main(String[] args) {
+//		int age = 21;
+//		System.out.println("私の年齢は" + age);
+//		age = 28;
+//		System.out.println("・・・いや、本当の年齢は" + age);
 //		System.out.println("Selfstudy3");
-
+		
+		//コンソールに「私の年齢は21
+		//・・・いや、本当の年齢は28」と表示される
+//		
+		
+		//エラーが出る
+//		final double Tax = 1.05;
+//		int fax = 5;
+//		System.out.println("５万円から４万円に値下げします");
+//		TAX = 4;
+//		System.out.println("FAXの新価格（税込み）");
+//		System.out.println( fax * TAX + "万円");
+		
+		//コンソールに「５万円から４万円に値下げします
+		//FAXの新価格（税込み）
+		//4.2万円」と表示
+       
+		//修正コード
+		final double TAX = 1.05; // 定数として宣言し、変更できないようにする
+		int fax = 5;
+		System.out.println("５万円から４万円に値下げします");        
+		        // TAXを4に変更するのではなく、価格を4万円に適用するためにTAXを使います
+		        double newPrice = fax * TAX;
+		        System.out.println("FAXの新価格（税込み）");
+		        System.out.println(newPrice + "万円");
+		        
+		        //コンソールに
+		        //「５万円から４万円に値下げします
+		        //FAXの新価格（税込み）
+		        //5.25万円」と表示される。
+		        
 	}
-
 }
 
 //
