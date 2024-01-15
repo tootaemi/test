@@ -24,20 +24,31 @@ public class Selfstudy3 {
 		//FAXの新価格（税込み）
 		//4.2万円」と表示
        
-		//修正コード
-		final double TAX = 1.05; // 定数として宣言し、変更できないようにする
-		int fax = 5;
-		System.out.println("５万円から４万円に値下げします");        
-		        // TAXを4に変更するのではなく、価格を4万円に適用するためにTAXを使います
-		        double newPrice = fax * TAX;
-		        System.out.println("FAXの新価格（税込み）");
-		        System.out.println(newPrice + "万円");
+//		//修正コード
+//		final double TAX = 1.05; // 定数として宣言し、変更できないようにする
+//		int fax = 5;
+//		System.out.println("５万円から４万円に値下げします");        
+//		        // TAXを4に変更するのではなく、価格を4万円に適用するためにTAXを使います
+//		        double newPrice = fax * TAX;
+//		        System.out.println("FAXの新価格（税込み）");
+//		        System.out.println(newPrice + "万円");
 		        
 		        //コンソールに
 		        //「５万円から４万円に値下げします
 		        //FAXの新価格（税込み）
 		        //5.25万円」と表示される。
 		        
+		
+		//計算の文
+		int a;
+		int b;
+		a = 20;
+		b = a + 5;
+		System.out.println( a );    //20
+		System.out.println( b );    //25
+		
+		
+		
 	}
 }
 
