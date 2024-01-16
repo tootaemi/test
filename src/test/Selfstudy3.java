@@ -48,18 +48,18 @@ public class Selfstudy3 {
 //		System.out.println( b );    //25
 		
 		
-		int a = 10;
-		int b = a++;
-		a = 10;
-		int c = ++a;
-		System.out.println( "変数bは" + b );  //変数bは10
-		System.out.println( "変数cは" + c );  //変数bは11
-
-		
-
+//		int a = 10;
+//		int b = a++;
+//		a = 10;
+//		int c = ++a;
+//		System.out.println( "変数bは" + b );  //変数bは10
+//		System.out.println( "変数cは" + c );  //変数bは11
 		
 		
-		
+		//変数宣言の文
+		int age;
+		age = 30;
+		System.out.println( age );    //30
 		
 	}
 }
