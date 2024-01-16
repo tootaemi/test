@@ -55,11 +55,21 @@ public class Selfstudy3 {
 //		System.out.println( "変数bは" + b );  //変数bは10
 //		System.out.println( "変数cは" + c );  //変数bは11
 		
+//		
+//		//変数宣言の文
+//		int age;
+//		age = 30;
+//		System.out.println( age );    //30
 		
-		//変数宣言の文
-		int age;
-		age = 30;
-		System.out.println( age );    //30
+		//命令実行の文
+		int a = 5;
+		int b = 3;
+		int m = Math.max(a,b);
+		System.out.println( "比較実験："+ a + "と" + b + "とで大きいのは・・・" + m );
+		
+		//比較実験：5と3とで大きいのは・・・5
+		//p85~
+		
 		
 	}
 }
