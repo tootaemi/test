@@ -61,15 +61,24 @@ public class Selfstudy3 {
 //		age = 30;
 //		System.out.println( age );    //30
 		
-		//命令実行の文
-		int a = 5;
-		int b = 3;
-		int m = Math.max(a,b);
-		System.out.println( "比較実験："+ a + "と" + b + "とで大きいのは・・・" + m );
-		
+//		//命令実行の文
+//		int a = 5;
+//		int b = 3;
+//		int m = Math.max(a,b);
+//		System.out.println( "比較実験："+ a + "と" + b + "とで大きいのは・・・" + m );
+//		
 		//比較実験：5と3とで大きいのは・・・5
-		//p85~
 		
+		//ランダムな数を生成する命令
+//		int r = new java.util.Random ().nextInt ( 90 );
+//		System.out.println("あなたはたぶん、" + r + "歳ですね？");
+		
+		//キーボードから入力を受け付ける命令
+		System.out.println ( "あなたの名前を入力してください。" );
+		String name = new java.util.Scanner ( System.in).nextLine ();
+		System.out.println ( "あなたの年齢を入力してください");
+		int age = new java.util.Scanner ( System.in ).nextInt();
+		System.out.println ("ようこそ、" + age + "歳の" + name + "さん");
 		
 	}
 }
