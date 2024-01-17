@@ -108,6 +108,13 @@ public class Selfstudy3 {
 		}
 		
 		
+		p144コード
+		p146コード
+		p148コード
+		p149コード
+		
+		
+		
 		
 	}
 }
