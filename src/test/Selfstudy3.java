@@ -74,14 +74,46 @@ public class Selfstudy3 {
 //		System.out.println("あなたはたぶん、" + r + "歳ですね？");
 		
 		//キーボードから入力を受け付ける命令
-		System.out.println ( "あなたの名前を入力してください。" );
-		String name = new java.util.Scanner ( System.in).nextLine ();
-		System.out.println ( "あなたの年齢を入力してください");
-		int age = new java.util.Scanner ( System.in ).nextInt();
-		System.out.println ("ようこそ、" + age + "歳の" + name + "さん");
+//		System.out.println ( "あなたの名前を入力してください。" );
+//		String name = new java.util.Scanner ( System.in).nextLine ();
+//		System.out.println ( "あなたの年齢を入力してください");
+//		int age = new java.util.Scanner ( System.in ).nextInt();
+//		System.out.println ("ようこそ、" + age + "歳の" + name + "さん");
+//		
+		
+//		関係演算子の種類と意味
+//		
+//		==　　左辺と右辺が等しい
+//		!=　　左辺と右辺が異なる
+//		>　　左辺が右辺より大きい
+//		<　　左辺が右辺より小さい
+//		>=　　左辺と右辺より大きいか等しい
+//		<=　　左辺が右辺より小さいか等しい
+		
+		
+		
+		
+		
 		
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //
 //オブジェクト指向
