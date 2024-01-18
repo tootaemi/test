@@ -102,28 +102,43 @@ public class Selfstudy3 {
 		
 		//繰り返し構文
 		//基本的なfor文のサンプル
-		for ( int i = 0 ; i < 10; i++) {
-			System.out.println("こんにちは");  //コンソールに10回こんにちはが表示
-			//基本形の丸暗記する。
-		}
+//		for ( int i = 0 ; i < 10; i++) {
+//			System.out.println("こんにちは");  //コンソールに10回こんにちはが表示
+//			//基本形の丸暗記する。
+//		}
 		
+		//点数管理プログラム
+//		int [ ] score = {20,30,40,50,80};
+//		int sum = score [1]+score[2]+score[3]+score[4]+score[5];
+//		int avg = sum / score.length;
+//		System.out.println("合計点：" + sum);
+//		System.out.println("平均点：" + avg);
+//	}
+
+//	上記コード修正
+//	配列とfor文
+//	int [ ] score = {20,30,40,50,80};
+//	for(int i = 0; i < score.length; i++) {
+//		System.out.println(score[i]);
+//		//20	30	40	50	80が表示される
+//	}
+	
 		
-		p144コード
-		p146コード
-		p148コード
-		p149コード
+//		int[ ] a = { 1,2,3 };
+//		int[ ] b;
+//		b = a;
+//		b[0] = 100;
+//		System.out.println( a[0] );
 		
-		
-		
+		//親配列と子配列の要素数を表示
+//		int[ ][ ] scores = { { 10, 20, 30 } , { 30, 40, 50 } };
+//		System.out.println(scores.length);  //2
+//		System.out.println(scores[0].length);   //3
+	
+		//感想、難しいからもっと勉強したい部分
 		
 	}
 }
-
-
-
-
-
-
 
 
 
