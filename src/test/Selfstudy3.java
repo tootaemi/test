@@ -137,10 +137,43 @@ public class Selfstudy3 {
 	
 		//感想、難しいからもっと勉強したい部分
 		
-		p193、194コード
-		p200練習問題
 		
 		
+		//p193、194コード
+		//p200練習問題
+		
+		//同じ配列を参照していることを確認する
+		//int型配列を受け取り
+		//配列内の要素すべてに1を加えるメソッド
+//		public static void intArray ( int[ ] array) {
+//			for ( int i = 0 ; i < array.length; i++) {
+//				array[ i ]++;
+//			}
+//		}
+//		public static void main(String[] args) {
+//			int [ ] array = { 1, 2, 3};
+//			incArray ( array );
+//			for ( int i : array ) {
+//				System.out.println ( i );
+				//2,3.4が表示されるはず
+				
+				//戻り値が配列の場合
+	
+	
+				public static int[ ] makeArray ( int size ) {
+					int[ ] newArray = new int [ size ];
+					for ( int i = 0 ; i < newArray.length ; i++) {
+						newArray [ i ] = i;
+					}
+					return newArray;
+				}
+				public static void main ( String[ ]args) {
+					int[ ] array = makeArray ( 3 );
+					for ( int i : array ) {
+						System.out.println ( i );
+					}
+				}
+			}
 		
 	}
 }
