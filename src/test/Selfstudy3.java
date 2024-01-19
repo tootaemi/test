@@ -160,20 +160,20 @@ public class Selfstudy3 {
 				//戻り値が配列の場合
 	
 	
-				public static int[ ] makeArray ( int size ) {
-					int[ ] newArray = new int [ size ];
-					for ( int i = 0 ; i < newArray.length ; i++) {
-						newArray [ i ] = i;
-					}
-					return newArray;
-				}
-				public static void main ( String[ ]args) {
-					int[ ] array = makeArray ( 3 );
-					for ( int i : array ) {
-						System.out.println ( i );
-					}
-				}
-			}
+//				public static int[ ] makeArray ( int size ) {
+//					int[ ] newArray = new int [ size ];
+//					for ( int i = 0 ; i < newArray.length ; i++) {
+//						newArray [ i ] = i;
+//					}
+//					return newArray;
+//				}
+//				public static void main ( String[ ]args) {
+//					int[ ] array = makeArray ( 3 );
+//					for ( int i : array ) {
+//						System.out.println ( i );
+//					}
+				//0.1.2が表示される
+			
 		
 	}
 }
