@@ -174,6 +174,48 @@ public class Selfstudy3 {
 //					}
 				//0.1.2が表示される
 			
+		//練習問題
+		//「introduceOneself」を定義する。
+		
+		
+		//introduceOneself();
+//	}
+//	public static void introduceOneself() {
+//		String name = "Java";
+//		int age =35;
+//		double height = 182.5;
+//		char gender = '男';
+//		System.out.println("私の名前は" + name + "です");
+//		System.out.println("歳は" + age + "歳です");
+//		System.out.println("身長は" + height + "cmです");
+//		System.out.println("性別は" + gender + "です");
+		
+		//表示結果
+		//私の名前はJavaです
+		//歳は35歳です
+		//身長は182.5cmです
+		//性別は男です
+
+//		//「email」を定義する。
+//		String title = "お誘い";
+//		String address = "uso800@xxxx.com";
+//		String text = "今度、飲みに行きませんか";
+//		email ( title, address, text );
+//	}
+//	public static void email( String title , String address , String text ) {
+//		System.out.println (address + "に、以下にメールを送信しました");
+//		System.out.println ( "件名：" + title );
+//		System.out.println ( "本文：" + text );
+		
+		//表示結果
+		//uso800@xxxx.comに、以下にメールを送信しました
+		//件名：お誘い
+		//本文：今度、飲みに行きませんか
+		
+		
+		
+		
+		
 		
 	}
 }
