@@ -236,7 +236,7 @@ public class Selfstudy3 {
 //			return (a - b);
 //		}
 		
-		
+		//オブジェクト指向
 		
 		
 		
