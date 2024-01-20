@@ -212,6 +212,33 @@ public class Selfstudy3 {
 		//件名：お誘い
 		//本文：今度、飲みに行きませんか
 		
+		//計算機プログラム
+		//リスト6-1
+//		int a = 10; int b = 2;
+//		int total = tasu(a,b);
+//		int delta = hiku(a,b);
+//		System.out.println("足したら" + total + "、引いたら" + delta);
+//	}
+//	public static int tasu(int a, int b) {
+//		return (a + b);
+//	}
+//	public static int hiku(int a, int b) {
+//		return (a - b);
+		
+		//足したら12、引いたら8 が表示される。
+		
+		
+		//リスト　6-2　CalcLogic.javaに中身を追加する
+//		public static int tasu(int a, int b) {
+//			return (a + b);
+//		}
+//		public static int hiku(int a, int b) {
+//			return (a - b);
+//		}
+		
+		
+		
+		
 		
 		
 		
