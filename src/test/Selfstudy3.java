@@ -1,5 +1,8 @@
 package test;
 
+//import java.text.SimpleDateFormat;
+//import java.util.Date;
+
 public class Selfstudy3 {
 	public static void main(String[] args) {
 //		int age = 21;
@@ -241,16 +244,48 @@ public class Selfstudy3 {
 		//インスタンスとクラス
 		//インスタンスの利用方法
 		//1.勇者を生成
-		Hero h = new Hero();
+		//Hero h = new Hero();
 		//2.フィールドに初期値をセット
-		h.name = "ミナト";
-		h.hp = 100;
-		System.out.println("勇者" + h.name + "を生み出しました！");
-		//3.勇者のメソッドを呼び出してゆく
-		h.sit(5);
-		h.slip();
-		h.sit(25);
-		h.run();
+//		h.name = "ミナト";
+//		h.hp = 100;
+//		System.out.println("勇者" + h.name + "を生み出しました！");
+//		//3.勇者のメソッドを呼び出してゆく
+//		h.sit(5);
+//		h.slip();
+//		h.sit(25);
+//		h.run();
+//		
+		
+		
+		//Javaを支える標準クラス
+		
+		//1316622225935というlong値が2011年9月22日1時23分45秒
+//		
+//	        long timestamp = 1316622225935L;
+//
+//		        // Dateクラスを使用してlong値を日付と時刻に変換
+//		        Date date = new Date(timestamp);
+//
+//		        // SimpleDateFormatを使用してフォーマット
+//		        SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日 HH時mm分ss秒");
+//		        String formattedDate = sdf.format(date);
+//
+//		        System.out.println(formattedDate);
+		
+
+		
+		
+//		
+//		long start = System.currentTimeMillis ();
+//		//ここで何かしらの時間がかかる処理
+//		long end = System.currentTimeMillis ();
+//		System.out.println ("処理にかかった時間は・・・" + ( end-start ) + "ミリ秒でした" );
+//		
+		
+		//「処理にかかった時間は・・・0ミリ秒でした」と表示
+		
+	
+		
 		
 		
 		
