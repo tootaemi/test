@@ -5,7 +5,6 @@ package test;
 				System.out.println("JavaSilverSE11");
 				
 				
-
 			
 		
 		
@@ -110,44 +109,67 @@ package test;
 //				・スペースが区切り記号として扱われる。
 //				・スペースを含む文字列はダブルクォーテーションで括ることで1つとして扱われる。
 //				・ダブルクォーテーションそのものは文字として扱わない。
-//				
-//				
-				
-				
-				
-				
-				
-				
-				
-//					}
-//				}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	}
 
-}
+				
+		
+//		
+//		第2章
+//		javaの基礎データ型と文字列操作
+//		・プリミティブ型のデータ
+//		・レテラル
+//		・varを使ったローカル変数の型推論
+//		・Stringクラス、Stringクラスのメソッド
+//		・文字列同志の連結
+//		・StringBuilderクラス、StringBuilderクラスのメソッド
+		
+		
+//				1.コンパイル、実行結果は？
+				
+//				public class Main {
+//					public static void main(String[] args) {
+//						int val = 7;
+////						bool flg = true;
+//						 boolean flag = true;
+//						if (flag == true) {
+//						 do {
+//								System.out.println(val);
+//							} while (val > 10);
+//								
+//							}
+//						}
+//		}
+		
+//		→コンパイルエラーが発生する。
+//		
+//		bool flg = true;　これを
+//        boolean flag = true;　に変更
+//
+//		
+////		
+//		if (flg == true) {　を
+//		if (flag == true) {　に変更
+//		これでコンソールに　「7」が表示される。
+
+		
+		//2.コンパイルエラーになるもの
+		
+		//int e = 0827;
+		//→8進数は0〜7の８つの数なので8は使えない。
+		//だからコンパイルエラーになる。
+		
+				
+				
+				
+		
+		
+		
+		
+		
+			}
+		}
+		
+		
+		
+		
+		
+		
