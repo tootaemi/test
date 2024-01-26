@@ -1,8 +1,10 @@
 package test;
 
-		public class JavaSilverSE11 {
-			public static void main(String[] args) {
-				System.out.println("JavaSilverSE11");
+//import java.util.ArrayList;
+//
+public class JavaSilverSE11 {
+//			public static void main(String[] args) {
+//				System.out.println("JavaSilverSE11");
 				
 				
 			
@@ -202,17 +204,67 @@ package test;
 //		※ ! @ # % ^ & * ( ) ' : ; [ / } 使えない。
 		
 		
-		
-		
-		
-		
+				
+				//6.変数宣言でコンパイルエラーにならないもの
+//				ver e = new ArrayList<>();
+//		
+//				
+//				コンパイルエラーになるもの
+//				ver a;
+//				var b = null;
+//				var c = () -> {};
+//				var d = {1, 2, 3};
+//				
+//				varを使った変数宣言
+//				例：））
+//				var a = 10;
+//				
+//				メソッドの戻り値からローカル変数の型を推論する。
+//				例：））
+//				var a = sample();
+//				
+//				ラムダ式からは変数の型を推論できない（コンパイルエラー）
+//				例：））
+//				var a = () -> {};
+//				
+//				配列の初期化式を使うと型推論できない
+//				例：））
+//				int[] array = {1,2,3};  //変数の型からintj配列型のインスタンスを生成してる
+//				var a = {1,2,3};  //型を特定できない
+//				
+//				ダイヤモンド演算子で型が推論できない場合にはObject型が使われる。
+//				例：））
+//				ver e = new ArrayList<>();
+//				
+//				7.どんな結果になるか
+				
+				public class Sample {
+					private var value;
+					public Sample(var value) {
+						this.value = value;
+					}
+					public void test() {
+					System.out.println(value);
+					}
+				}
+				
+				public class Main {
+					public static void main(String[] args) {
+						Sample s = new Sample("sample");
+						s.test();
+					}
+
+				}
+				
+				→コンパイルエラーななる。
+				
 		
 		
 		
 		
 		
 			}
-		}
+		//}
 		
 		
 		
