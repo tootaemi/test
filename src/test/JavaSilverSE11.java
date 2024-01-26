@@ -1,9 +1,9 @@
 package test;
 
 //import java.util.ArrayList;
-//
 public class JavaSilverSE11 {
-//			public static void main(String[] args) {
+	public static void main(String[] args) {
+}
 //				System.out.println("JavaSilverSE11");
 				
 				
@@ -238,27 +238,136 @@ public class JavaSilverSE11 {
 //				
 //				7.どんな結果になるか
 				
-				public class Sample {
-					private var value;
-					public Sample(var value) {
-						this.value = value;
-					}
-					public void test() {
-					System.out.println(value);
-					}
-				}
+//				public class Sample {
+//					private var value;
+//					public Sample(var value) {
+//						this.value = value;
+//					}
+//					public void test() {
+//					System.out.println(value);
+//					}
+//				}
+//				
+//				public class Main {
+//					public static void main(String[] args) {
+//						Sample s = new Sample("sample");
+//						s.test();
+//					}
+//
+//				}
 				
-				public class Main {
-					public static void main(String[] args) {
-						Sample s = new Sample("sample");
-						s.test();
-					}
-
-				}
-				
-				→コンパイルエラーななる。
-				
+//				→コンパイルエラーになる。
+//				varを使った変数宣言に関する問題。
+//				varによる型推論はローカル変数の宣言にしか使えない。
+//				
+//				例：））フィールドの宣言に型推論は使えない（コンパイルエラー）
+////		
+//				public class Sample {
+//					var name = "";
+//					var price = 0;
+//				}
+	
+	
+	//　例：））引数の型宣言に型推論は使えない（コンパイルエラー）
+	       
+//	       public class Sample {
+//		     public void test(var value) {
+//		    	 System.out.println(value);
+//		     }
+//	　　　　　　　}
+//	       
+//	       varは値の代入式をみて代入する値の型から変数の型を推論する。
+//	       メソッドの定義をコンパイルしようとした時に
+//	       どのコードからこのメソッドが使われているかを探して型推論できないため
+//	       コンパイルエラーになる。
+	       
+	       //8.コード略。
+	
+//	
+//	9. Stringオブジェクトを作成するコードとして正しいもの。
+//	
+//	String a = new String("sample");
+//	String b = "sample";
+//	
+//	複数の文字を集めたものを「文字列」
+//	文字列操作の為のメソッドを提供するクラスが用意されている。
+//	→　java.lang.Stringクラス
+//	
+//	Stringクラスのインスタンス生成方法の代表的なのは次の2通り
+//	・newを使ってインスタンス化する。
+//	・”ダブルクォーテーションで括った文字列リテラルを記述する。
+	
+	
+	
+	//10.結果として正しいもの
+	
+	//public class Main {
+//		public static void main(String[] args) {
+//			String str = "hoge, world.";
+//			hello(str);
+//			System.out.println(str);
+//		}
+//		private static void hello(String msg) {
+//			msg.replaceAll("hoge", "hello");
+//		}
 		
+//		→　「hoge, world.　」と表示される。
+//	
+//		Stringオブジェクトが不変なオブジェクトであることを理解する為の問題。
+//		
+//		変更できるオブジェクト→「mutable(可変)なオブジェクト
+//		変更できないオブジェクト→「immutable(不変)なオブジェクト」
+//	
+//	
+//	immutableなオブジェクトを定義するには
+//	下記のようにする。
+//	
+//	・全てのフィールドをprivateで修飾する。
+//	・オブジェクト内部の状態を変更可能なメソッドを提供しない
+//	（例えばsetterメソッドを提供しない）
+//	・クラスをfinalで宣言し、メソッドがオーバーライドされないことを保証する。
+//	（サブクラスからの変更を防ぐ）
+//	・内部に可変オブジェクトを保持している場合
+//	そのオブジェクトを外部に提供しない
+//	（例えばgetterメソッドを提供しない）
+//	   
+//	      ！　 試験対策
+//	       String クラスについて以下の2点を確認しおきましょう。
+//	       ・Stringはimmutableなオブジェクトであるため文字列を変更するには
+//	       新しくインスタンスを作らなければならない。
+//	      ・replaceAllメソッドをはじめとするStringクラスメソッドの挙動
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 		
 		
 		
