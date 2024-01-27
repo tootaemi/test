@@ -365,10 +365,113 @@ public class JavaSilverSE11 {
 //       
 //       ！charAtメソッドの引数に指定する文字番号は0から始まる。
 //       5番目の文字を取り出す場合は、引数には4を指定する。
+	      
+		
+		//12.結果として正しいもの
+
+	       //public class Main {
+	    		//public static void main(String[] args) {
+	    			//String str = "abcde";
+	    			//System.out.println(str.index0f("abcdef"));
+		
+		
+		//→　-1が表示される。
+		
+		//StringクラスのindexOfメソッドに関する問題。
+		//indexOfメソッドは引数で指定された文字が文字列のどの位置に存在するかを
+		//調べるためのメソッド。
+		//引数で指定した文字が存在しなければ-1が戻される。
+		
+		
+		//String str = "abcde";
+		//System.out.println(str.index0f('c'));
+		
+		//このメソッドはオーバーロードされていて
+		//位置を調べたい文字をchar型で渡す以外にも文字列で渡すこともできる。
+		//文字列を引数に渡した場合、このメソッドはその文字列が始まる
+		//最初の文字位置に戻す。
+		
+		//※オーバーロードとは、同じクラスの中でメソッド名と戻り値の型が同じで、
+		//引数の型や数、並び順が違うメソッドを2つ以上定義すること
+		
+		//13.結果として正しいもの
+		
+//	       public class Main {
+//	    		public static void main(String[] args) {
+//	    			String str = "abcde";
+//	    			System.out.println(str.substring("2,4"));
+//	       
+//	    			⇨　「cd」と表示される。
+//	    			Stringクラスのsubstringメソッドに関する問題。
+//	    			java.lang.Stringクラスのsubstringメソッドは文字列から
+//	    			任意の文字列を抽出するメソッド。
+	    			
+	    			//14.結果として正しいもの
+	    			
+	    			//public class Main {
+	    				//public static void main(String[] args) {
+//	    				String str = "aaaa";
+//	    				System.out.println(str.replace("aa", "b"));
+//	    			
+//	    				⇨「bb」と表示される。
+//		    			Stringクラスのreplaceメソッドに関する問題。
+//		    			java.lang.Stringクラスのreplaceメソッドは文字列を
+//		    			置き換えるためのメソッド。
+//		    			
+//		    			・先頭の2文字「aa」が「b」に置き換わり「baa」という文字列が戻される。
+//		    			・置き換え後の文字列「baa」のうち「aa」が「b」に置き換わり
+//		    			「bb」という文字列が戻される。
+//		    			
+		    			
+	       //15.結果として正しいもの
 	       
-	       
-	       
-	       
+	       //public class Main {
+	    	   //public static void main(String[] args) {
+//			String str = "abcde";
+//			System.out.println(str.charAt(str.length()));		
+//	       
+//			→　実行時に例外がスローされる。
+//			
+//			Stringクラスのlengthメソッドに関する問題。
+//			lengthメソッドは文字数を戻すメソッド。
+			
+		
+			//16.結果として正しいもの
+
+		       //public class Main {
+				//public static void main(String[] args) {
+//					String str = "abcde";
+//					System.out.println(str.substring(1,3).startsWith("b"));
+//		
+//					→　true　が表示される。
+//					
+//					StringクラスのstartsWithメソッドに関する問題。
+//					startsWithメソッドは文字列が引数で指定された文字で
+//					始まるかどうかを調べる為のメソッド。
+//					調べた結果は真偽値で戻される。
+//					
+////		
+//	17. 略
+
+		
+		
+//	18.結果として正しいもの。
+	//public class Main {
+		//public static void main(String[] args) {
+//			System.out.println(10 + 20 + "30" + 40);
+//		
+//			3→　303040　が表示される。
+//			
+//			＋演算子と文字列の連結に関する問題。
+//			①　10 + 20 = 30
+//			② 30 + "30" = "3030"
+//			③ "3030" + 40 = "303040"
+		
+		
+		
+		
+		
+		
 	       
 	       
 	       
@@ -392,7 +495,7 @@ public class JavaSilverSE11 {
 		
 		
 			}
-		//}
+		}
 		
 		
 		
