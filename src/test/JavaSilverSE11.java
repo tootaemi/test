@@ -3,7 +3,7 @@ package test;
 //import java.util.ArrayList;
 public class JavaSilverSE11 {
 	public static void main(String[] args) {
-}
+//}
 //				System.out.println("JavaSilverSE11");
 				
 				
@@ -340,12 +340,31 @@ public class JavaSilverSE11 {
 	       
 	       
 	       
+//	      ※例外がスローされる意味　→ 
+//	      例外とは、プログラム実行中に発生する予期せぬエラーのこと。
+//	       このエラーが発生することを「例外がスローされる」という。
+//	       
+//	       ※コンパイルエラーとは、プログラミング言語で記述されたソースコードを
+//	       機械語のコードに変換（コンパイル）する際に、
+//	       何らかの致命的な問題が発生して失敗・中断すること。
+//	       コンパイル・エラーがなくなるまで、実行プログラムを生成することはできない。
 	       
-	       
-	       
-	       
-	       
-	       
+	       //11.結果として正しいもの
+	       //public class Main {
+//	    		public static void main(String[] args) {
+//	    			String str = "abcde";
+//	    			System.out.println(str.charAt(5));
+//	    		}
+//	       }
+//
+//　　　　　　　→実行時に例外がスローされる。
+//       StringsクラスのcharAtメソッドに関する問題。
+//       6番目の文字はない。
+//       そのため実行すると文字列の範囲外にアクセスしたことを示す
+//       例外　java.lang.StringlndexOutOfBoundsExceptionがスローされる。
+//       
+//       ！charAtメソッドの引数に指定する文字番号は0から始まる。
+//       5番目の文字を取り出す場合は、引数には4を指定する。
 	       
 	       
 	       
