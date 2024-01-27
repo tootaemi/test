@@ -468,18 +468,68 @@ public class JavaSilverSE11 {
 //			③ "3030" + 40 = "303040"
 		
 		
+		//19.結果として正しいもの。
+		
+	    //public class Main {
+			//public static void main(String[] args) {
+//				String str = null;
+//				str += "null";
+//				System.out.println(str);
+//				
+//				⇨「nullnull」と表示される。
+//				
+//				＋＝演算子と文字列の連結に関する問題。
+//				＋＝演算子も文字列を連結する。
+//				
+//				
+//				20.結果として正しいもの。
+	    //public class Main {
+//				//public static void main(String[] args) {
+//		           StringBuilder sb = new StringBuilder("abcde");
+//		           System.out.println(sb.capacity());
+//				
+//	       
+//	       ⇨　21が表示される。
+//	       StringBuilderクラスに関する問題。
+	       
+//	       public StringBuilder(String str) {
+//	    	   super(str.length() +16);
+//	    	   append(str);
+//	       }
+//	       初期状態で16文字分。
+//	       「文字列の長さ＋16文字分」のバッファを持っている。
+	       
+	       //21.結果として正しいもの。
+		//public class Main {
+			//public static void main(String[] args) {
+//		        StringBuilder sb = new StringBuilder();
+//		        sb.append("abcde");
+//		        sb.reverse();
+//		        sb.replace(1, 3, "a");
+//		        System.out.println(sb);
+//		        
+//		        ⇨　eaba　と表示される。
+//	       
+//	       appendメソッドは文字列に新しい文字列を追加するメソッド。
+//	       追加された文字列は既存の文字列の後ろに追加される。
+//	       
+//	       reverseメソッドは文字列を反転するメソッド。
+//
+//StringBuilder sb = new StringBuilder();
+//新しい StringBuilder インスタンスを作成しますが、ここでは初期文字列は指定されていません。
+//sb.append("abcde");
+//StringBuilder に "abcde" を追加します。この時点で sb の内容は "abcde" です。
+//sb.reverse();
+//StringBuilder の内容を逆順にします。"abcde" が逆になり、"edcba" になります。
+//sb.replace(1, 3, "a");
+//インデックス 1 から 3 までの範囲を "a" で置き換えます。ここで重要なのは、replace メソッドの第二引数（この場合は 3）が置換される範囲の終わりのインデックスを指し、このインデックスの文字は置換の対象に含まれないということです。つまり、インデックス 1（'e'）と 2（'d'）が "a" で置き換えられます。したがって、"edcba" は "eaba" になります。
+//System.out.println(sb);
+//現在の StringBuilder の内容を出力します。この時点での内容は "eaba" です。
+//
+
 		
 		
 		
-		
-	       
-	       
-	       
-	       
-	       
-	       
-	       
-	
 	
 	
 	
