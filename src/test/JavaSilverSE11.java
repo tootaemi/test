@@ -672,9 +672,16 @@ public class JavaSilverSE11 {
 //		byte b = 127; ⇨　byteの範囲に収まるint型のリテラルのためコンパイルできる
 //	
 		
+		//4.結果として正しいもの。
+		//public class Main {
+		//public static void main(String[] args) {
+		     int a = 10;
+		     int b = a++ + a + a-- - a-- + ++a;
+		     System.out.println(b);
 		
+		     //⇨　32が表示される。
 		
-		
+		     難しい。。
 		
 		
 		
