@@ -529,9 +529,18 @@ public class JavaSilverSE11 {
 
 		
 		
-		
-	
-	
+		//22.結果として正しいもの。
+		//public class Sample {
+		//public static void main(String[] args) {
+//		    StringBuilder sb = new StringBuilder("abcde");
+//	        System.out.println(sb.indexOf("bcd"));
+//	
+//	⇨　「1」が表示される。
+//	StringBuilderクラスのindexOfメソッドに関する問題。
+//	StringBuilderクラスのindexOfメソッドはStringBuilderの
+//	インスタンスが保持している文字列のうち
+//	引数で受け取った文字列の「開始位置」を戻す。
+//	
 	
 	
 	
