@@ -675,9 +675,9 @@ public class JavaSilverSE11 {
 		//4.結果として正しいもの。
 		//public class Main {
 		//public static void main(String[] args) {
-		     int a = 10;
-		     int b = a++ + a + a-- - a-- + ++a;
-		     System.out.println(b);
+//		     int a = 10;
+//		     int b = a++ + a + a-- - a-- + ++a;
+//		     System.out.println(b);
 		
 //		     //⇨　32が表示される。
 //		
@@ -707,14 +707,51 @@ public class JavaSilverSE11 {
 //		     b = 10 + 11 + 11 - 10 + 10 = 32;
 //
 //		     最終的に、System.out.println(b); は 32 を出力します。
+		     
+		     
+		     //5.結果として正しいもの。
+		     
+				//public class Main {
+				//public static void main(String[] args) {
+		
+		
 //		
+//		     boolean a = true;
+//		     boolean b = true;
+//		     System.out.println(a <= b);
+//		     
+//		     ⇨コンパイルエラーが発生する。
+//		     
+//		     関係演算子についての質問。
+//		     関係演算子は左右のオペランドの値を比較し真偽値を戻す演算子。
+//		     等しいならtrue, 等しくないならfalseを戻す。
+//		     
+		
+//		下記のコードならエラーにならずtrueが出力される。
+//		     boolean a = true;
+//		     boolean b = true;
+//		     System.out.println(a == b); // trueが出力される
+//
+//		
+		//7.結果として正しいもの。
+		
+		//public class Main {
+		//public static void main(String[] args) {
+//		     int a = 10;
+//		     int b = 10;
+//		     if (10 < a && 10 < ++b) {
+//		    	 a++;
+//		     }
+//		     System.out.println(a + b);
+//		
+//		     →　20が表示される。
+//		     論理演算子に関する問題。
+//		     
+//		     複数の関係演算子を組み合わせ、複雑な条件を指定するために使うのが論理演算子。
+
 		
 		
-		
-		
-		
-		
-		
+
 		
 		
 		
