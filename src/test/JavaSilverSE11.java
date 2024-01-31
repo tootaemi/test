@@ -841,16 +841,56 @@ public class JavaSilverSE11 {
 		
 //		11,12省略
 //		明日します
-		13〜18（仮）
+		//13〜18（仮）
 		
 		
 		
+		//19.switch文の条件式が戻せる型として正しいもの。
 		
+//		→
+//		A char
+//		B byte
+//		C short
+//		D int
+//		F String
+//		G enum
+//		
+//		switch文に関する問題。
+//		
+//		構文
+//		switch (条件式) {
+//		case 値　:　処理
+//		　　break;
+//		case 値　:　処理
+//		　　break;
+//		default 値　:　処理
+//		　　break;
+//	}
+//		
+//		switch文は、条件式が戻す値と一致するcase式を実行する。
+//		・char
+//		・ byte
+//		・ short
+//		・ int
+//		・ Character
+//		・ Byte
+//		・ Short
+//		・ Integer
+//		・ String
+//		・ Enum
+//		
+//		→
+//		・　int型以下の整数型とそのラッパークラス
+//		・　文字と文字列
+//		・列挙型
+//		
+//		20.略
+//		
+//		21.もう一度復習する
 		
-		
-		
-		
-		
+		明日（1/31）するとメモしたが
+		体調不良になってしまったため
+		他の日にしようと思う
 
 		
 		
