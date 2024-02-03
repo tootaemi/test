@@ -96,9 +96,18 @@ public class JavaSilverSE11_0 {
 //		
 //		
 	
-		9.
-		
-		
+////		9. 「10」表示になる。
+//		int array[][] = new int[][] { { 1, 2 }, { 2, 3, 4 }};
+//		int total = 0;
+//		for (int i = 0; i < array.length; i++) {
+//			for ( int j = i; j < array[i].length; j++ ) {
+//				total += array[i][j];
+//			}
+//		}
+//		System.out.println(total);
+//		
+//		>>> 二重ループを使った問題。
+//		外側のループがまわる間に内側のループがまわる。
 		
 		
 		
