@@ -950,17 +950,87 @@ public class JavaSilverSE11 {
 //		
 //		→　false,true　と表示される。
 		
+		//14.
+//		String a = "abc";
+//		String b = new String(a);
+//		
+//		int count = 0;
+//		if (a.intern() == "abc") {
+//			count++;
+//		}
+//		if (a.intern() == "abc") {
+//			count++;
+//		}
+//		if (a.intern() == b.intern()) {
+//			count++;
+//		}
+//		System.out.println(count);
+//
+//	→「3」が表示される。
+//		
+//		Stringクラスのinternメソッドに関する問題。
+//		internメソッドはコンスタンスプールを含むメモリ内の文字を探して
+//		再利用するためのメソッド。
+//		
+//		15.
+//		int num = 10;
+//		if (num <= 10)
+//			System.out.println("ok");
+//		
+//		→　if文の構文に関する問題。
 		
+//		16.
+//		
+//		if (false)
+//			System.out.println("A");
+//		    System.out.println("B");
 		
+		//17.
+//		int num = 10;
+//		if (num < 10)
+//			System.out.println("A");
+//		else
+//			System.out.println("B");
+//		if (num == 10)
+//			System.out.println("C");
+//		
+//		→「BとCが表示される」
 		
+		//if-else文の構文に関する問題。
 		
-		
-		
-		
-		
-		//13〜18（仮）
-		
-		
+		//18.
+//		int num = 10;
+//		if (num == 100)
+//			System.out.println("A");
+//		else if (10 < num)
+//			System.out.println("B");
+//		else
+//			if(num == 10)
+//				System.out.println("C");
+//			else
+//				if(num == 10)
+//					System.out.println("D");
+//				
+//		→ Cが表示される。
+
+//最初のif文(num == 100)は、numが100に等しいかどうかをチェックします。
+//numの値は10なので、この条件は偽（false）です。
+//したがって、このブロックはスキップされ、「A」は出力されません。
+//
+//次のelse if文(10 < num)は、10がnumより小さいかどうかをチェックします。
+//numの値は10なので、この条件も偽（false）です。
+//したがって、このブロックもスキップされ、「B」は出力されません。
+//
+//elseブロックに入ると、更にネストされたif文があります。
+//このif文(num == 10)は、numが10に等しいかどうかをチェックします。
+//numの値は10なので、この条件は真（true）です。したがって、「C」が出力されます。
+//
+//さらにネストされたelseブロック内のif文(num == 10)に到達することはありません。
+//なぜなら、その前のif文でnum == 10の条件が真と評価され、
+//「C」が出力された後に、そのelseブロックには進まないからです。
+//結果として、「C」が出力されるのは、numの値が10であり、
+//最初の2つの条件が偽であった後に、ネストされたif文の条件が真と評価されるためです。
+				
 		
 		//19.switch文の条件式が戻せる型として正しいもの。
 		
@@ -1003,12 +1073,31 @@ public class JavaSilverSE11 {
 //		
 //		20.略
 //		
-//		21.もう一度復習する
+//		21.
+//		
+//		int num = 1;
+//		switch (num) {
+//		case 1:
+//		case 2:
+//		case 3: System.out.println("A");
+//		case 4: System.out.println("B");
+//		default:
+//			System.out.println("C");
+//
+//		}
+//		
+//		→　A  B  C  と表示される。
 		
-//		明日（1/31）するとメモしたが
-//		体調不良になってしまったため
-//		他の日にしようと思う
-		//してない分の3章の問題は土日に必ず戻ってやる。
+//		switch文のbreakに関する問題。
+//		switch文ではcase値に合致する処理が実行される。
+//		
+//		処理が終わればbreakを使ってswitch文を抜けるようにする。
+		
+		
+		
+		
+		
+		//してない分の3章の問題は土日に必ず戻ってやる。→土曜日に済み
     
 		
 //		第4章
