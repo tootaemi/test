@@ -833,14 +833,131 @@ public class JavaSilverSE11 {
 //		
 		
 		
-		//9。省略
+		//9。
+//		public class Sample {
+//			private int num;
+//			private String name;
+//			public Sample(int num, String name) {
+//				this.num = num;
+//				this.name = name;
+//			}
+//			public boolean equals(Object obj) {
+//				if (obj == null) {
+//					return false;
+//				}
+//				if (obj instanceof Sample) {
+//					Sample s = (Sample) obj;
+//					return s.num == this.num;
+//				}
+//				return false;
+//			}
+//		}
+//		
+//		
+//		public class Main {
+//			public static void main(String[] args) {
+//				Sample a = new Sample(10, "a");
+//				Sample b = new Sample(10, "b");
+//				System.out.println(a.equals(b));
+//				
+//				trueが表示される
+
+//　　　　　　同値性についての問題。
+//      同値性とは、インスタンスは異なるが、同じ値を持っている性質のこと。
+//
+//nameの値は異なるもののnumの値は同じ。
+//ewualsメソッドで比較すると「同値である」ことになり、
+//その結果「true」と表示される。
+//
+//！　異なるインスタンス同士が同じ値を持っているか（同値であるか）を
+//確認するにはequalsメソッドを使う。
+//！　equalsメソッドはオーバーライドを前提としているメソッド。
+
+
+//			
+//`true`が表示される理由は、`Sample`クラスの`equals`メソッドの実装にあります。
+//このメソッドは、渡されたオブジェクトが`null`でなく、
+//`Sample`のインスタンスである場合にのみ`true`を返すように設計されています。
+//さらに重要なことは、このメソッドが等価性のチェックに`num`フィールドのみを使用している点です。
+//`name`フィールドは等価性の評価には使用されません。
+//
+//具体的には、`equals`メソッドは以下の手順で動作します：
+//
+//1. 渡されたオブジェクトが`null`であれば`false`を返します。
+//2. 渡されたオブジェクトが`Sample`クラスのインスタンスであるかどうかをチェックします。
+//3. オブジェクトが`Sample`のインスタンスであれば、キャストを行い、
+//渡されたオブジェクトの`num`フィールドと現在のオブジェクトの`num`フィールドが
+//同じ値であるかどうかをチェックします。
+//4. `num`フィールドが等しければ`true`を、そうでなければ`false`を返します。
+//
+//この例では、`Sample a`と`Sample b`はそれぞれ`num`フィールドに`10`を持っていますが、
+//`name`フィールドは異なります（それぞれ"a"と"b"）。`equals`メソッドは
+//`num`フィールドのみを比較するため、この二つのオブジェクトは等しいと見なされ、
+//結果として`true`が出力されます。
+//
+//この実装では、`name`フィールドの値にかかわらず、
+//`num`フィールドの値が同じであれば二つの`Sample`オブジェクトは等しいとみなされます。
+//これが`true`が表示される理由です。
+
+		//10,
+//public class Sample {
+//	private int num;
+//	public Sample(int num) {
+//		this.num = num;
+//	}
+//	public boolean equals(Sample obj) {
+//		if (obj == null) {
+//			return false;
+//		}
+//		return this.num == obj.num;
+//	
+//		public class Maim {
+//			public static void main(String[] args) {
+//				Object a = new Sample(10);
+//				Object b = new Sample(10);
+//				System.out.println(a.equals(b));
+//			}
+//		}
+//
+//		→ false と表示される。
+		//インスタンスの同値性に関する問題。
+//!　objectクラスのequalsメソッドはobject型を引数に受け取りboolean型の戻り値を戻す。
+
+
+		//11,
+//		Object a = new Object();
+//		Object b = null;
+//		System.out.println(a.equals(b));
+//		
+//		→　false　が表示される。
 		
-		//10,省略
+		//12,
+//		String a = "sample";
+//		String b = "sample";
+//		System.out.print(a == b);
+//		System.out.print(",");
+//		System.out.print(a.equals(b));
 		
-		//9、10は明日もう一度する
+		//→　true,trueと表示される。
 		
-//		11,12省略
-//		明日します
+		
+		//13.
+//		String a = new String("sample");
+//		String b = "sample";
+//		System.out.print(a == b);
+//		System.out.print(",");
+//		System.out.print(a.equals(b));
+//		
+//		→　false,true　と表示される。
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		//13〜18（仮）
 		
 		
@@ -1012,24 +1129,6 @@ public class JavaSilverSE11 {
 //	- ループが終了した後、"B"が1回出力されます。
 //	
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+			
 		}
 	}
-		
-		
-		
-		
-		
