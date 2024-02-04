@@ -142,18 +142,69 @@ public class JavaSilverSE11_0 {
 //		正確な出力は実行環境によって異なりますが、一般的には
 //		[Ljava.lang.String;@に続くハッシュコードの形式になります。
 		
+		//！　拡張for文の構文は、「一時変数の宣言　：　コレクション/　配列」。
+		//拡張for文の集合には、配列とjava.util.ArrayListが使える。
+		//拡張for文で2次元配列を扱う場合、
+		//1次元目の配列から要素（2次元目の配列への参照）を取り出して、一時変数に代入する。
 		
 		
+//		//12.
+//		String[] array = { "A", "B", "C" };
+//		for ( String str  : array ) {
+//			str = "D";
+//		}
+//		for (String str : array) {
+//			System.out.print(str);
+//		}
+//		
+//		⇨ 「ABC」と表示される。
 		
+		//13. 省略
 		
+		//14.
+//		String[] array = { "A", "B" };
+//		for ( String a  : array ) {
+//			for (String b : array) {
+//				if ("B".equals(b))
+//					break;
+//				System.out.print(b);
+//		}
+//		
+//		⇨「AA」と表示される。
 		
+		//15.
+//		int[] array = { 1, 2, 3, 4, 5 };
+//		int total = 0;
+//		for (int i : array) {
+//			if (i % 2 == 0)
+//				continue;
+//			total += i;
+//		}
+//		System.out.println(total);	
+//		
+//		⇨「9」が表示される。
+//		
+//		2で割って余りが0の値、つまり偶数の値であった場合に、
+//		continueを実行してスキップしている。
+//		奇数の場合はその値を合計する。
+//		変数totalには1、3、5の3つの数値の合計が代入される。
 		
-		
-		
-		
-		
-		
-		
+//		16.　ラベルが記述できるもの
+//		if文やswitch文、式、代入、return文、tryブロック
+//		
+//		
+		//17.
+//		int total = 0;
+//		a: for (int i = 0; i < 5; i++) {
+//			b : for (int j =0; j <5; j++) {
+//				if (i % 2 == 0) continue a;
+//				if (3 < j) break b;
+//				total += j;
+//			}
+//		}
+//		System.out.println(total);
+//		
+//		⇨「12」が表示される。
 		
 		
 		
@@ -161,39 +212,3 @@ public class JavaSilverSE11_0 {
 		
 		        }
 		    }
-		
-
-				
-
-
-
-
-
-
-
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
