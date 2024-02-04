@@ -208,6 +208,39 @@ public class JavaSilverSE11_0 {
 		
 		
 		
+//		第5章
+//		配列の操作
+//		・配列の宣言、初期化、インスタンスの生成
+//		・多次元配列
+//		・配列のコピー
+		
+//		//1.
+//		int[] array = new int[0];
+//		System.out.println(array);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		        }
