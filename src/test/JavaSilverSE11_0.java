@@ -218,10 +218,56 @@ public class JavaSilverSE11_0 {
 //		int[] array = new int[0];
 //		System.out.println(array);
 		
+		//2.
 		
+//		int[] a;
+//		int b[];
+//		int[][]c;
+//		int d[][];
+//		int[] e[];
+//		int[][] f[];
+//		
+//		⇨　コンパイルエラーは発生しない。
+//		
+//		配列型変数の宣言方法に関する問題。
+//		配列型変数の宣言①
+//		int[] array;
+//		この大カッコは、データ型の後ろに記述するだけでなく
+//		変数名の後ろに記述することもできる。
+//		
+//		配列型変数の宣言②
+//		int array[];
+//		
+//		2次元配列、3次元配列の配列型変数の宣言①
+//		int[][] arrayA;  //2次元配列型変数の宣言
+//		int arrayB[][][];   //3次元配列型変数の宣言
+//		
+//		2次元配列、3次元配列の配列型変数の宣言②
+//		int[] arrayA[];  //2次元配列型変数の宣言
+//		int[][] arrayB[];  //3次元配列型変数の宣言	
+
 		
+		//3,配列型変数の宣言として正しいもの
+		//→　全て誤り。
 		
+		//4.コンパイルエラーになるコード
 		
+		//A int a[] = new int[2][3];
+		//B int[] b = new int[2.3]:
+		//F int f[][] = new int[][3];
+		
+		//5,
+		
+		//6,
+//		String[] array = {"A","B","C","D"};
+//		array[0] = null;
+//		for (String str : array) {
+//			System.out.print(str);
+//		}
+//		
+//		⇨　nullBCD　が表示される。
+		
+		7,
 		
 		
 		
