@@ -525,6 +525,52 @@ public class JavaSilverSE11_0 {
 		
 		
 		//7.
+//		public class Sample {
+//			public void hello() {
+//				System.out.println("hello");
+//			}
+//		}
+//		public class Main {
+//		    public static void main(String[] args) {
+//		        Sample sample = new Sample();
+//		        sample.hello();
+//		    }
+//		}
+		
+		//8.
+		
+//		public class Sample {
+//			public int add(Integer a, Integer b) {
+//				return a + b;
+//			}
+//		}
+//		public class Main {
+//		    public static void main(String[] args) {
+//		    	Samle s = new Sample();
+//				System.out.println(s,add(10));
+//		    }
+//		
+//		    コンパイルエラーになる
+		//下記のコードが正しい
+//		
+//		    public class Sample {
+//		        public int add(Integer a, Integer b) {
+//		            return a + b;
+//		        }
+//		    }
+//
+//		    public class Main {
+//		        public static void main(String[] args) {
+//		            Sample s = new Sample();
+//		            System.out.println(s.add(10, 20)); // 正しい引数の数でメソッドを呼び出す
+//		        }
+//		    }
+		
+		9.
+		
+		
+		
+		
 		
 		
 		
