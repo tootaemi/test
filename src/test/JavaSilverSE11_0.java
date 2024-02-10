@@ -566,8 +566,18 @@ public class JavaSilverSE11_0 {
 //		        }
 //		    }
 		
-		9.
-		
+		//9.
+		//public class Main {
+			//public static void main(String[] args) {
+				//int a = 1;
+				//int b = 2;
+//				//System.out.println(a);   //1
+				//System.out.println(b + 2);  //4
+				//int c = b;
+				
+				
+				//10.正しい記述のもの
+		         void sample() { }
 		
 		
 		
