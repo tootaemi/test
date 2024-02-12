@@ -841,10 +841,33 @@ public class JavaSilverSE11_0 {
 //		！　コンストラクタ内からオーバーロードされた
 //		別のコンストラクタを呼び出すにはthisを使う。
 		
-		
-		
-		
-		
+//		//25.
+//		public class Sample {
+//			public Sample() {
+//				System.out.println("A");
+//				this("B");
+//			}
+			
+			//下記のコースに変更するとコンパイルエラーはでない。
+//			public Sample() {
+//			    this("B"); // 最初のステートメントとしてコンストラクタチェーンを呼び出す
+//			    System.out.println("A");
+//			}
+//			//ここまで
+//
+//			public Sample(String str) {
+//				System.out.println(str);
+//			}
+//		}
+//		
+//		public class Main {
+//			public static void main(String[] args) {
+//				Sample s = new Sample();
+//			}
+//		}
+//		
+//		→
+		//コンパイルエラーが発生する。
 		
 		
 		
