@@ -869,8 +869,69 @@ public class JavaSilverSE11_0 {
 //		→
 		//コンパイルエラーが発生する。
 		
+		///26.
+//		package ex26;
+//		
+//		public class Parent {
+//			int num = 10;
+//		}
+//		
+//		package other;
+//		import ex26.Parent;
+//		
+//		public class Child extends Parent {
+//			public static void main(String[] args) {
+//				System.out.println(num);
+//				}	
+//			}
+//		⇨　Childクラスの884行目でコンパイルエラー発生。
+//		他のパッケージに属するクラスからフィールドへのアクセス制御の関する問題。
+//		
+//		「アクセス修飾子」
+//		修飾子　　　　　　　　　　　説明
+//		public               全てのクラスからアクセス可能
+//		protected            同じパッケージに属するか継承しているサブクラスからのみアクセス可能
+//		なし（デフォルト）　　　　同じパッケージに属するクラスからのみアクセス可能
+//		private               クラス内からのみアクセス可能
+//		
 		
+		//27.省略
 		
+		//28.
+//		public class Sample {
+//			int num;
+//			int getNum() { return num; }
+//			void setNum(int num) { this.num = num; }
+//		}
+//		
+//		public class Sample {
+//			private int num;
+//			public int getNum() { return num; }
+//			private void setNum(int num) { this.num = num; }
+//		}
+		
+		//29.
+//		public class Sample {
+//			int num;
+//			public Sample(int num) {
+//				this.num = num;
+//			}
+//		}
+//		
+//		public class Main {
+//			public static void main(String[] args) {
+//				Sample s = new Sample(10);
+//				modify(s.num);
+//				System.out.println(s.num);
+//			}
+//			private static void modify(int num) {
+//				num *= 2;
+//			}
+//		}
+		
+//		→　10が表示される。
+		
+		//30、明日復習
 		
 		
 		
