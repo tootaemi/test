@@ -2,7 +2,7 @@ package test;
 
 public class JavaSilverSE11_0 {
 	public static void main(String[] args) {
-//		System.out.println("JavaSilverSE11_0");
+		System.out.println("JavaSilverSE11_0");
 
 		
 		
