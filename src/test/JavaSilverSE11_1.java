@@ -116,12 +116,66 @@ public class JavaSilverSE11_1 {
 //		実現したクラスが必ず実装しなければいけない。
 		
 		//5.結果として正しいもの
+//		public interface A {
+//			@Override
+//			default String toString() {
+//				return "A";
+//			}
+//		}
+//				
+//		public class B implements A {
+//			@Override
+//			public String toString() {
+//				return "B";
+//			}
+//		}
+//		
+//		public class Main {
+//			public static void main(String[] args) {
+//				A a = new B();
+//				System.out.println(a);
+//			}
+//		}
+//		⇨　Aインターフェースでコンパイルエラーとなる。
+//		解説；　インターフェースに定義するデフォルトメソッドは、
+//		実現クラスが持つべきデフォルトの実装を定義するもの。
+//		Aインターフェースでjava.lang.Objectクラスに
+//		定義されているtoStringメソッドをデフォルトメソッドとして
+//		オーバーライドしているためコンパイルエラーが発生する。
 		
+		//6.省略
 		
-		
-		
-		
-		
+		//7.結果として正しいもの。
+//		public interface A {
+//			default void test() {
+//				System.out.println("A");
+//			}
+//		}
+//		public interface B {
+//			default void test() {
+//				System.out.println("B");
+//			}
+//		}
+//		public class Main implements A, B {
+//			public static void main(String[] args) {
+//				new Main().test();
+//			}
+//		}
+//		//→　コンパイルエラーが発生する。
+//		このコード例では、MainクラスがAインターフェースとBインターフェースの両方を実装していますが、
+//		両方のインターフェースにtestメソッドのデフォルト実装が存在します。
+//		Javaでは、同一のシグネチャを持つメソッドの複数のデフォルト実装を持つインターフェースを
+//		一つのクラスが実装しようとすると、どちらのデフォルトメソッドを使用すべきか
+//		Javaコンパイラが決定できないため、コンパイルエラーが発生します。
+//		
+//このコードには、Main クラスが A と B 両方のインターフェースを実装しており、
+//それぞれのインターフェースには同じシグネチャのデフォルトメソッド test() が定義されています。
+//Javaでは、異なるインターフェースのデフォルトメソッド間で名前とシグネチャが衝突する場合、
+//コンパイルエラーが発生します。これは、Javaコンパイラがどちらの test() メソッドを
+//Main クラスで呼び出すべきかを自動的に判断できないためです。
+//
+//この問題を解決するには、Main クラス内で test() メソッドをオーバーライドして、
+//どちらのインターフェースのメソッドを使用するか明示的に指定する必要
 		
 		
 		
