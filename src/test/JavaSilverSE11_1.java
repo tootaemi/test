@@ -221,9 +221,7 @@ public class JavaSilverSE11_1 {
 			AbstractSample s = new ConcreteSample();
 			s.sample();
 		}
-
-			
-		}
+	}
 		
 		
 		
