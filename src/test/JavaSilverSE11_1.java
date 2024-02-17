@@ -202,34 +202,82 @@ public class JavaSilverSE11_1 {
 //		   　　抽象メソッドは、具象クラスが実装しないといけない。
 		
 		//9.
-		abstract class AbstractSample {
-			public void sample() {
-				System.out.println("A");
-				test();
-				System.out.println("C");
-			}
-			protected abstract void test();
-		}
-		class ConcreteSample extends AbstractSample {
-			protected void test() {
-				System.out.println("B");
-			}
-		}
-		
-		public class Main {
-		public static void main(String[] args) {
-			AbstractSample s = new ConcreteSample();
-			s.sample();
-		}
-	}
-		
-		
-		
-		
-		
+//		abstract class AbstractSample {
+//			public void sample() {
+//				System.out.println("A");
+//				test();
+//				System.out.println("C");
+//			}
+//			protected abstract void test();
+//		}
+//		class ConcreteSample extends AbstractSample {
+//			protected void test() {
+//				System.out.println("B");
+//			}
+//		}
+//		
+//		public class Main {
+//		public static void main(String[] args) {
+//			AbstractSample s = new ConcreteSample();
+//			s.sample();
+//		}
+//	}
+//		
+		//→「A」「B」「C」と表示される。
+		//抽象クラスからのメソッド呼び出しに関する問題。
 		
 		
 		
+//このコードでは、AbstractSampleという抽象クラスと、
+//それを継承するConcreteSampleという具象クラスが定義されています
+//。抽象クラスAbstractSampleには、具象メソッドsample()と抽象メソッドtest()が定義されています。
+//sample()メソッドは、コンソールに"A"を出力し、test()メソッドを呼び出した後、"C"を出力します。
+//test()メソッドは抽象メソッドであり、サブクラスでの実装を必要とします。
+//
+//ConcreteSampleクラスはAbstractSampleを継承し、test()メソッドをオーバーライドしています。
+//このオーバーライドされたtest()メソッドは、"B"を出力します。
+//
+//Mainクラスのmainメソッドでは、AbstractSample型の変数sを宣言し、
+//ConcreteSampleのインスタンスを代入しています。その後、s.sample()を呼び出しています。
+//
+//このsample()メソッドの実行フローは以下の通りです：
+//
+//"A"を出力。
+//test()メソッドを呼び出し、ConcreteSampleクラスにおけるtest()メソッドの実装が実行され、"B"を出力。
+//"C"を出力。
+//したがって、このコードを実行すると、コンソールには"A"、"B"、"C"の順に出力されます。
+//		
+		
+		//10.オーバーライドに関する説明として正しいもの。
+		//→　引数リストの定義は、型、数、順番の全てが同じでなければいけない。
+//		解説；　メソッドのオーバーライドの基礎知識を問う問題。
+//		オーバーライドはサブクラスでスーパークラスに定義されたメソッドを
+//		「再定義」すること。
+//		「多重定義」を表すオーバーロードと間違えやすいので注意！！
+//		メソッドを再定義するため、メソッドのシグニチャ（メソッド名、引数リストの型、数、順番）は
+//		同じでないといけない。
+//		
+//		！サブクラスでは、オーバーロードされたメソッドが使われる。
+		
+	
+//		メソッドをオーバーライドする際には、サブクラスでオーバーライドされるメソッドの
+//		シグネチャが、スーパークラスのメソッドシグネチャと完全に一致している必要があります。
+//		メソッドのシグネチャには、メソッド名と引数リストが含まれます。
+//		したがって、オーバーライドするメソッドでは、以下の条件が一致していなければなりません：
+//
+//		メソッド名：オーバーライドされるメソッドと同じ名前である必要があります。
+//		引数リスト：
+//		型：引数の型が全て同じである必要があります。
+//		数：引数の数が同じである必要があります。
+//		順番：引数の順番が同じである必要があります。
+//		これらの条件を満たすことで、サブクラスのメソッドはスーパークラスのメソッドを正しくオーバーライドすることができます。
+//		オーバーライドは、サブクラスがスーパークラスの特定の振る舞いを特定の方法で再定義したい場合に使用されます。
+//		また、オーバーライドするメソッドは、アクセス修飾子においても制限があります。
+//		例えば、スーパークラスのメソッドがprotectedである場合、サブクラスでオーバーライドするメソッドは
+//		protectedまたはそれよりもアクセス範囲が広い修飾子（public）を使用することができますが、
+//		より狭い範囲の修飾子（private）を使用することはできません。
+		
+		11.
 		
 		
 		
