@@ -176,6 +176,60 @@ public class JavaSilverSE11_1 {
 //
 //この問題を解決するには、Main クラス内で test() メソッドをオーバーライドして、
 //どちらのインターフェースのメソッドを使用するか明示的に指定する必要
+//		
+//		javaでは２つ以上のクラスを同時に継承する多重継承が禁止されているが
+//		インターフェースの多重継承は可能。
+//		
+//		呼び出すデフォルトメソッドを特定する。
+//		public class Main implements A.B {
+//			public static void main(String[] args) {
+//				new Main().test();
+//			}
+//			@Override
+//			public void test() {
+//				A.super.test();
+//			}
+//		}
+//
+//		8.抽象クラスに関する説明として正しいもの。
+//		
+//		→　・インスタンスを生成することはできない。
+//		　　・サブクラスから抽象クラスの公開フィールドに自由にアクセスできる。
+//		  　・抽象クラスを継承した抽象クラスを定義できる。
+//		
+//		   解説；　抽象クラスの基礎知識を問う問題。
+//		   ！　抽象クラスはインスタンス化できない。
+//		   　　抽象メソッドは、具象クラスが実装しないといけない。
+		
+		//9.
+		abstract class AbstractSample {
+			public void sample() {
+				System.out.println("A");
+				test();
+				System.out.println("C");
+			}
+			protected abstract void test();
+		}
+		class ConcreteSample extends AbstractSample {
+			protected void test() {
+				System.out.println("B");
+			}
+		}
+		
+		public class Main {
+		public static void main(String[] args) {
+			AbstractSample s = new ConcreteSample();
+			s.sample();
+		}
+
+			
+		}
+		
+		
+		
+		
+		
+		
 		
 		
 		
