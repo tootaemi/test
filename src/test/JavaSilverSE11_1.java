@@ -1,7 +1,7 @@
 package test;
-
-public class JavaSilverSE11_1 {
-	public static void main(String[] args) {
+//
+//public class JavaSilverSE11_1 {
+//	public static void main(String[] args) {
 //		System.out.println("Hello, world!");
 		
 //		第7章
@@ -454,7 +454,196 @@ public class JavaSilverSE11_1 {
 //この修正により、Aインターフェースを実装するBとCのインスタンスのみが
 //A[] array配列に含まれることになり、コンパイルエラーが解消されます。
 		
-		16.
+		//16.
+//		class A { }
+//		
+//		class B extends A {
+//			void hello() {
+//				System.out.println("hello");
+//			}
+//		}
+//		
+//		public class Main {
+//			public static void main(String[] args) {
+//				A a = new B();
+//				B b = (B) a;
+//				b.hello();
+//			}
+//		}
+//
+//このコードはJavaにおけるクラスの継承とポリモーフィズムに関するものです。
+//クラス`A`とクラス`B`があり、`B`は`A`を継承しています。
+//そして、`Main`クラスに`main`メソッドが含まれています。
+//
+//- **クラスA**：メソッドやプロパティを持たない空のクラスです。
+//
+//- **クラスB**：クラスAを継承しており、`hello()`メソッドを含んでいます。
+//このメソッドはコンソールに`"hello"`という文字列を出力します。
+//
+//- **Mainクラス**：プログラムのエントリーポイントである`main`メソッドが定義されています。
+//
+//`main`メソッドの処理は以下の通りです：
+//
+//1. `B`クラスのインスタンスが作成され、`A`型の変数`a`に代入されます（`A a = new B();`）。
+//これは、スーパークラスの変数がサブクラスのインスタンスを参照できるポリモーフィズムの例です。
+//
+//2. 変数`a`に代入されたオブジェクトは`B`型にキャストされ、変数`b`に代入されます（`B b = (B) a;`）。
+//このキャストは、`a`が実際には`B`型のインスタンスを参照していることを明示的に示しています。
+//
+//3. `b.hello();`の呼び出しにより、`B`クラスの`hello`メソッドが実行され、"hello"という文字列がコンソールに出力されます。
+//
+//このコードは、Javaの継承、ポリモーフィズム、および型キャストの基本的な使用方法を示しています。
+//サブクラスのインスタンスをスーパークラスの型で扱い、必要に応じて
+//サブクラスの型にキャストすることで、サブクラス固有のメソッドにアクセスすることができます。
+//		
+		//17.
+//		class A {
+//			void hello() {
+//				System.out.println("A");
+//			}
+//		}
+//		
+//		class B extends A {
+//			void hello() {
+//			System.out.println("B");
+//		}
+//	}
+//	
+//	public class Main {
+//		public static void main(String[] args) {
+//			A a = new A();
+//			B b = (B) a;
+//			b.hello();
+//			}
+////		}
+//このコードは、Javaにおけるクラスの継承とメソッドのオーバーライドに関連するものですが、実行時に問題が発生します。
+//具体的には、`ClassCastException`が発生します。ここで何が起こっているかを説明します：
+//
+//- **クラスA**: `hello()`メソッドを持ち、このメソッドはコンソールに`"A"`を出力します。
+//
+//- **クラスB**: クラスAを継承し、`hello()`メソッドをオーバーライドしています。このメソッドはコンソールに`"B"`を出力します。
+//
+//- **Mainクラス**: `main`メソッド内で、まず`A`クラスのインスタンス`a`が作成されます。
+//その後、`a`を`B`型にキャストしようとしますが、`a`は実際には`A`のインスタンスであるため、
+//このキャストは実行時に`ClassCastException`を引き起こします。
+//
+//コードの問題点は、`A`型のインスタンスを`B`型にキャストしようとしている点にあります。
+//このキャストは、`a`が実際には`B`のインスタンス、つまり`B`のオブジェクト
+//または`B`のサブクラスのオブジェクトを参照している場合にのみ成功します。
+//しかし、`a`は`A`のインスタンスを直接参照しており、`B`のインスタンスではないため、キャストは失敗し、例外が投げられます。
+//
+//正しく動作させるためには、`A`のインスタンスを`B`にキャストする代わりに、
+//`B`のインスタンスを作成し、それを使用する必要があります。例えば、以下のように修正することができます：
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        B b = new B();
+//        b.hello();
+//    }
+//}
+//
+//この修正により、`B`クラスのインスタンスが作成され、
+//オーバーライドされた`hello`メソッドが呼び出され、"B"がコンソールに出力されます。
+
+//
+//		//18.コンソールに「10」を表示させる。
+//         class Sample {
+//        	 private int num;
+//        	 public Sample(int num) {
+//        		 this.num = num;
+//        		 //setNum(num);
+//        	 }
+//        	 public int getNum() {
+//        		 return num;
+//        	 }
+//        	 public void setNum(int num) {
+//        		 this.num = num;
+//        	 }
+//         }
+//         public class Main {
+//        	 public static void main(String[] args) {
+//        		 Sample s = new Sample(10);
+//        		 System.out.printli(s.getNum());
+//        	 }
+//         }
+//
+//！　フィールドとローカル変数を同じ名前で宣言した場合ローカル変数が優先される。
+//ローカル変数ではなくフィールドを使いたい場合にはthisを使う。
+//その場合の書式は「this.フィールド名」
+
+         
+         //19.結果として正しいもの。
+//         class Parent {
+//        	 String name;
+//        	 String getName() {
+//        		 return this.name;
+//        	 }
+//         }
+//         
+//         public class Child extends Parent {
+//        	 String name;
+//         }
+//         public class Main {
+//        	 public static void main(String[] args) {
+//        		 Child child = new Child();
+//        		 child.name = "sample";
+//        		 System.out.println(child.getName());
+//        	 }
+//         }
+//         ⇨　「null」と表示される。
+//         
+//         
+//         このコードでは、「null」と表示される理由は、
+//         `Child`クラスと`Parent`クラスの両方に`name`というフィールドが存在し、
+//         `Child`クラスのインスタンスが`Parent`クラスの`getName()`メソッドを呼び出した際に、
+//         `Parent`クラスの`name`フィールドが参照されるためです。
+//         `Child`クラスの`name`フィールドに値が設定されても、
+//         `Parent`クラスの`name`フィールドはデフォルト値（null）のまま変更されていません。
+//
+//         Javaでは、サブクラスがスーパークラスと同じ名前のフィールドを持つ場合、
+//         サブクラスのフィールドはスーパークラスのフィールドを隠蔽しますが、
+//         スーパークラスのメソッドからはスーパークラスのフィールドが参照されます。
+//         この場合、`Child`クラスの`name`フィールドは、
+//         `Parent`クラスの`name`フィールドとは異なるフィールドとして扱われます。
+//
+//         コードの動作を以下に示します：
+//
+//         1. `Child`クラスのインスタンス`child`が作成されます。
+//         2. `child.name = "sample";`により、`Child`クラスの`name`フィールドに`"sample"`が設定されます。
+//         3. `child.getName();`が呼び出されますが、このメソッドは`Parent`クラスに定義されており、
+//         `Parent`クラスの`name`フィールドの値を返します。
+//         `Parent`クラスの`name`フィールドは初期化されていないため、デフォルト値の`null`が返されます。
+//
+//         この問題を解決するためには、`Parent`クラスの`name`フィールドに値を設定するか、
+//         `Child`クラスで`getName()`メソッドをオーバーライドして、
+//         `Child`クラスの`name`フィールドを返すようにすることが考えられます。
+//         例えば、`Child`クラスに以下のように`getName()`メソッドを追加することができます：
+//
+//         @Override
+//         String getName() {
+//             return this.name;
+//         }
+//       
+//         この変更により、`Child`クラスのインスタンスで`getName()`メソッドを呼び出した場合、
+//         `Child`クラスの`name`フィールドの値が返され、期待した結果が得られます。
+//         
+//         
+         
+         
+
+
+
+
+
+
+		
+		
+		
+		
+
+
+
+
 
 
 		
@@ -462,21 +651,7 @@ public class JavaSilverSE11_1 {
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	}
-}
+//		
+//		
+//	}
+//}
