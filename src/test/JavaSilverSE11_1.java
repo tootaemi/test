@@ -375,6 +375,96 @@ public class JavaSilverSE11_1 {
 		//インターフェースの実装に関する問題。
 		
 		//14.結果として正しいもの。
+//		public interface Worker {
+//			void work();
+//		}
+//		class Employee implements Worker {
+//			public void work() {
+//				System.out.println("report");
+//			}
+//			public void report() {
+//				System.out.println("report");
+//			}
+//		}
+//		class Engineer extends Employee {
+//			public void create() {
+//				System.out.println("create future");
+//			}
+//		}
+//		
+//		public class Main {
+//			public static void main(String[] args) {
+//				Worker a = new Engineer();
+//				Employee b = new Engineer();
+//				Employee c = new Engineer();
+//				a.create();
+//				b.work();
+//				c.report();
+//				}
+//			}
+//	
+//		→　Mainクラスの「	a.create();」ここでコンパイルエラーになる。
+//		
+		//ポリモーフィズムを使った問題。
+//		mainメソッドでは次にcreateメソッド、workメソッド、reportメソッドを呼び出している。
+//		変数aを使ってcreateメソッドを呼び出している。しかし、変数aはWorker型であり
+//		このインターフェースにはcreateメソッドが定義されていない。なのでそこでコンパイルエラーになる。
+//		
+//		！　フィールドやメソッドの呼び出しは。変数で定義されたものしか使えない。
+//		ポリモーフィズムを使った問題では変数が何型かを確認するようにして。
+		
+		//15.実行結果として正しいもの。
+		
+//		1. public interface A { }
+//		1. public class B implements A { }
+//		1. public class C extends B { }
+//		1. public class D { }
+//		
+//		public class Main {
+//			public static void main(String[] args) {
+//				A[] array = {
+//						new B(),
+//						new C(),
+//						new A(),
+//						new D()
+//				};
+//			}
+//		
+//		⇨「new A(),」と「new D()」でコンパイルエラーが発生する。　
+//		
+//		Mainクラスのmainメソッド内でコンパイルエラーが2つ発生します。
+//new A(),：Aはインターフェースであり、インターフェースのインスタンスを直接生成することはできません。
+//Javaでは、インターフェースは実装されなければインスタンス化することができません。
+//この行はコンパイルエラーを引き起こします。
+//new D()：配列A[] arrayはAインターフェースの型のオブジェクトのみを格納することができます。
+//DクラスはAインターフェースを実装していないため、この配列に追加することはできません。
+//したがって、この行もコンパイルエラーを引き起こします。
+//正しく動作するコードに修正するには、new A(),とnew D()の行を削除する必要があります。
+//修正後のコードは以下のようになります：
+//
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        A[] array = {
+//            new B(),
+//            new C()
+//        };
+//    }
+//}
+//この修正により、Aインターフェースを実装するBとCのインスタンスのみが
+//A[] array配列に含まれることになり、コンパイルエラーが解消されます。
+		
+		16.
+
+
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
