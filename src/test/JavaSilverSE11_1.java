@@ -763,14 +763,81 @@ package test;
 //・Functionインターフェース
 //・Consumerインターフェース
 
+//1.省略
+
+//2.「//insert code here」 にはいるコードとして誤っているもの。
+public class Main {
+	public static void main(String[] args) {
+		//insert code here
+		System.out.println(f.test("Lambda"));
+	}
+	private static interface Function {
+		String test(String name);
+	}
+}
 
 
+A
+Function f = (name) -> {
+	return "hello, " + name;
+};
+
+B
+Function f = (name) -> {
+	"hello, " + name;
+}
+
+C
+Function f = (name) -> return "hello, " + name;
+
+D
+Function f = (name) -> "hello, " + name;
+
+E
+Function f = (name) -> {
+	return "hello, " + name;
+};
 
 
+→　B,Cが誤り
+※　コードを追加しエラー出るか出ないか見るのは明日以降にします。
 
 
+ラムダ式の宣言にあたり省略できる構文についての問題。
+
+構文
+関数型インターフェースの型　変数名　＝　（ 引数 ）　ー＞　{ 処理 }	;
+
+この構文のうち、代入演算子の右側がラムダ式。
+ラムダ式の引数の宣言では、カッコ「()」も省略できる。
+
+構文
+関数型インターフェースの型　変数名　＝　引数　ー＞　{ 処理 }	;
+
+ただし、カッコを省略できるのは引数が１つの時だけ。
+
+中カッコあり　　　　　　　　　　　　　中カッコなし
+・複数の処理を記述できる　　　　　　　　・1つしか処理ができない
+・戻り値を戻すにはreturnが必要　　　　　・戻り値を戻すにはcreturnを省略
+
+！ラムダ式の構文について以下のことを覚えておこう。
+・ラムダ式で中カッコを省略した場合には処理は1分だけ記述できる。また、returnは記述できない。
+・ラムダ式で中カッコを記述した場合にはreturnは省略できない。
 
 
+3.結果として正しいもの。
+public class Main {
+	public static void main(String[] args) {
+		String val = "A";
+		Function f = (val) -> {
+			System.out.println(val);
+		};
+		f.test("B");
+	}
+}
+interface Function {
+	void test(String val);
+}
 
 
 
