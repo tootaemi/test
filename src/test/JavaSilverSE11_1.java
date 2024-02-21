@@ -765,92 +765,234 @@ package test;
 
 //1.省略
 
-//2.「//insert code here」 にはいるコードとして誤っているもの。
-public class Main {
-	public static void main(String[] args) {
-		//insert code here
-		System.out.println(f.test("Lambda"));
-	}
-	private static interface Function {
-		String test(String name);
-	}
-}
-
-
-A
-Function f = (name) -> {
-	return "hello, " + name;
-};
-
-B
-Function f = (name) -> {
-	"hello, " + name;
-}
-
-C
-Function f = (name) -> return "hello, " + name;
-
-D
-Function f = (name) -> "hello, " + name;
-
-E
-Function f = (name) -> {
-	return "hello, " + name;
-};
-
-
-→　B,Cが誤り
-※　コードを追加しエラー出るか出ないか見るのは明日以降にします。
-
-
-ラムダ式の宣言にあたり省略できる構文についての問題。
-
-構文
-関数型インターフェースの型　変数名　＝　（ 引数 ）　ー＞　{ 処理 }	;
-
-この構文のうち、代入演算子の右側がラムダ式。
-ラムダ式の引数の宣言では、カッコ「()」も省略できる。
-
-構文
-関数型インターフェースの型　変数名　＝　引数　ー＞　{ 処理 }	;
-
-ただし、カッコを省略できるのは引数が１つの時だけ。
-
-中カッコあり　　　　　　　　　　　　　中カッコなし
-・複数の処理を記述できる　　　　　　　　・1つしか処理ができない
-・戻り値を戻すにはreturnが必要　　　　　・戻り値を戻すにはcreturnを省略
-
-！ラムダ式の構文について以下のことを覚えておこう。
-・ラムダ式で中カッコを省略した場合には処理は1分だけ記述できる。また、returnは記述できない。
-・ラムダ式で中カッコを記述した場合にはreturnは省略できない。
-
-
-3.結果として正しいもの。
-public class Main {
-	public static void main(String[] args) {
-		String val = "A";
-		Function f = (val) -> {
-			System.out.println(val);
-		};
-		f.test("B");
-	}
-}
-interface Function {
-	void test(String val);
-}
-
-
-
-
-
-
-
-		
-		
-		
-		
-		
-//		
-//		
+////2.「//insert code here」 にはいるコードとして誤っているもの。
+//public class Main {
+//	public static void main(String[] args) {
+//		//insert code here
+//		System.out.println(f.test("Lambda"));
 //	}
+//	private static interface Function {
+//		String test(String name);
+//	}
+//}
+//
+//
+//A
+//Function f = (name) -> {
+//	return "hello, " + name;
+//};
+//
+//B
+//Function f = (name) -> {
+//	"hello, " + name;
+//}
+//
+//C
+//Function f = (name) -> return "hello, " + name;
+//
+//D
+//Function f = (name) -> "hello, " + name;
+//
+//E
+//Function f = (name) -> {
+//	return "hello, " + name;
+//};
+
+//
+//→　B,Cが誤り
+//※　コードを追加しエラー出るか出ないか見るのは明日以降にします。
+//→22日以降に変更。
+//
+//
+//ラムダ式の宣言にあたり省略できる構文についての問題。
+//
+//構文
+//関数型インターフェースの型　変数名　＝　（ 引数 ）　ー＞　{ 処理 }	;
+//
+//この構文のうち、代入演算子の右側がラムダ式。
+//ラムダ式の引数の宣言では、カッコ「()」も省略できる。
+//
+//構文
+//関数型インターフェースの型　変数名　＝　引数　ー＞　{ 処理 }	;
+
+//ただし、カッコを省略できるのは引数が１つの時だけ。
+//
+//中カッコあり　　　　　　　　　　　　　中カッコなし
+//・複数の処理を記述できる　　　　　　　　・1つしか処理ができない
+//・戻り値を戻すにはreturnが必要　　　　　・戻り値を戻すにはcreturnを省略
+//
+//！ラムダ式の構文について以下のことを覚えておこう。
+//・ラムダ式で中カッコを省略した場合には処理は1分だけ記述できる。また、returnは記述できない。
+//・ラムダ式で中カッコを記述した場合にはreturnは省略できない。
+//
+//
+//3.結果として正しいもの。
+//public class Main {
+//	public static void main(String[] args) {
+//		String val = "A";
+//		Function f = (val) -> {
+//			System.out.println(val);
+//		};
+//		f.test("B");
+//	}
+//}
+//interface Function {
+//	void test(String val);
+//}
+//
+//→コンパイルエラーが発生
+
+//ラムダ式の変数スコープに関する問題。
+//ラムダ式は、変数宣言のうちデータ型の宣言を省略しているだけでString型の変数valを宣言しているのと同じ。
+//ラムダ式で宣言されている変数valは「	String val = "A";」ここで宣言されている。
+//同じ名前の変数を重複して宣言していることによりコンパイルエラーが発生する。
+//！　メソッド内で宣言したローカル変数と同じ名前の変数をラムダ式の引数名としてつかうことはできない。
+
+
+//このJavaのコードは、ラムダ式を使用して`Function`インターフェースの実装を試みていますが、
+//コンパイルエラーが発生します。主な理由は、ラムダ式で使用されるパラメータ`val`が、
+//ラムダ式の外側のスコープで既に定義されているためです。
+//Javaでは、ラムダ式内で使用される変数は、その外側のスコープ（エンクロージングスコープ）で
+//一意でなければなりません。このケースでは、メソッド`main`内で`String val = "A";`として
+//`val`が既に宣言されており、ラムダ式の引数として再度`val`を使用しようとしているため、変数の名前が衝突しています。
+//
+//解決策としては、ラムダ式のパラメータの名前を変更することです。
+//例えば、以下のように修正することができます：
+//
+//public class Main {
+//	public static void main(String[] args) {
+//		String val = "A";
+//		Function f = (newValue) -> { // パラメータ名を変更
+//			System.out.println(newValue);
+//		};
+//		f.test("B");
+//	}
+//}
+//
+//interface Function {
+//	void test(String val);
+//}
+//
+//この修正により、ラムダ式内のパラメータ名が
+//外側のスコープの変数名と衝突しなくなり、コンパイルエラーが解消されます。
+//
+//		//4.結果として正しいもの。
+//      public class Sample {
+//    	  public static void main(String[] args) {
+//    		  int cnt = 0;
+//    		  Runnable r = () -> {
+//    			  for (cnt = 0; cnt < 10; cnt++) {
+//    				  System.out.println(cnt++);
+//    			  }
+//    		  };
+//    		  new Thread(r).start();
+//      } 
+//    }
+//      
+//→　コンパイルエラーが発生する。
+//ラムダ式からアクセスできる範囲に関する問題。
+//
+//for (cnt = 0; cnt < 10; cnt++) {　のfor文の更新文と、
+//	  System.out.println(cnt++);のコンソール出力を行うタイミングで
+//	  ローカル変数cntをインクリメントして値を変更している。
+//	  そのためこのコードはコンパイルエラーになる
+
+//
+//このJavaコードでは、ラムダ式内でローカル変数`cnt`を変更しようとしていますが、
+//これはコンパイルエラーを引き起こします。ラムダ式内から参照されるローカル変数は
+//実質的にfinalである必要があります。これは、その変数がラムダ式の実行時に変更されないことを意味します。
+//ローカル変数をラムダ式内で変更しようとすると、変数が実質的にfinalではなくなり、コンパイルエラーが発生します。
+//
+//このコードの場合、`cnt`はラムダ式の外で宣言され、ラムダ式内で変更されています。
+//これはJavaのラムダ式の制約に違反しています。
+//
+//コンパイルエラーを回避するには、ラムダ式内で独立したカウンタを使用するか、
+//`cnt`を変更しない別のアプローチを取る必要があります。例えば、以下のように修正できます：
+//
+//public class Sample {
+//    public static void main(String[] args) {
+//        Runnable r = () -> {
+//            for (int cnt = 0; cnt < 10; cnt++) {
+//                System.out.println(cnt);
+//            }
+//        };
+//        new Thread(r).start();
+//    }
+//}
+//
+//この修正では、`cnt`をラムダ式内で宣言しています。
+//これにより、`cnt`はラムダ式のスコープ内に限定され、外側のスコープの変数とは独立しています。
+//この変更により、ラムダ式が実質的にfinalな変数の条件を満たし、コンパイルエラーが解消されます。
+//また、ラムダ式内で`cnt`をインクリメントして出力する際に、`cnt++`ではなく`cnt`を出力するようにしています。
+//これは、`cnt++`を使うと`cnt`の値が出力後にインクリメントされるため、意図した出力と異なる可能性があるからです。
+//
+
+//5.省略
+
+//6.引数を受け取らず結果を戻すためのもの、
+//Supplier
+//引数を受け取らずに結果だけを戻すのでSupplier(供給者)という名前がついている。
+
+//7.
+//import java.util.function.*;
+//
+//public Main {
+//	public static void main(String[] args) {
+//		Function <String, Integer> func = (str) -> {
+//			return Integer.parseInt(str);
+//		};
+//		System.out.println(func.apply("100") * 2);
+//		}
+////	}
+//関数型インターフェースのFunctionに関する問題。
+
+
+
+
+
+
+//このコードスニペットには、Javaでの`Function`インターフェースの使用例が示されていますが、少し修正が必要です。
+//提供されたコードにはクラスの定義が不完全で、`Function`インターフェースのインポートが欠けています。
+//`Function`は`java.util.function`パッケージの一部で、一つの引数を受け取り、結果を返す関数を表します。
+//
+//以下は修正されたバージョンのコードです：
+//
+//import java.util.function.Function;
+//
+//public class Main { // "class"キーワードを追加
+//	public static void main(String[] args) {
+//		Function<String, Integer> func = (str) -> {
+//			return Integer.parseInt(str);
+//		};
+//		System.out.println(func.apply("100") * 2);
+//	}
+//}
+//
+//この修正では、以下の変更を加えました：
+//
+//1. `public class Main`の定義に`class`キーワードを追加しました。これはクラスを定義する際に必要です。
+//2. `java.util.function.Function`インターフェースをインポートしました。
+//これにより`Function`インターフェースをコード内で直接使用できるようになります。
+//
+//このコードは、文字列を整数に変換するラムダ式を定義し、それを使用して文字列"100"を整数に変換し、
+//その結果に2を乗算して出力します。出力結果は`200`になります。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //}
