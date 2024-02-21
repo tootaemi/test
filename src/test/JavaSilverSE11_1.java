@@ -972,10 +972,57 @@ package test;
 //
 //このコードは、文字列を整数に変換するラムダ式を定義し、それを使用して文字列"100"を整数に変換し、
 //その結果に2を乗算して出力します。出力結果は`200`になります。
+//
 
 
+//第9章
+//API
 
+//1.省略
+//2.省略
 
+////3. 「3」「2」「1」と表示させる
+//import java.util.Arrays;
+//import java.util.List;
+//
+//public class Main {
+//	public static void main(String[] args) {
+//		List<Integer> list = Arrays.asList(new Integer[] {1,2,3});
+//		list.sort((a, b) -> -a.compareTo(b));
+//		for (Integer num : list) {
+//			System.out.println(num);
+//		}
+//	}
+//}
+//
+//このJavaプログラムは、リストを降順にソートして出力します。
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        // Integer型のリストを作成し、初期値として1, 2, 3を設定します。
+//        List<Integer> list = Arrays.asList(new Integer[] {1, 2, 3});
+//        // ラムダ式を使って、リストの要素を降順にソートします。
+//        // 比較関数として(a, b) -> -a.compareTo(b)を使用しています。
+//        // これにより、自然順序の逆で要素がソートされます。
+//        list.sort((a, b) -> -a.compareTo(b));
+//        // 拡張forループを使って、ソートされたリストの各要素を出力します。
+//        for (Integer num : list) {
+//            System.out.println(num);
+//        }
+//    }
+//}
+//
+//
+//このプログラムは、次のように動作します。
+//
+//1. `Arrays.asList`メソッドを使用して、`Integer`オブジェクトのリストを作成します。このリストには初めに1, 2, 3が格納されています。
+//2. `list.sort`メソッドを使い、ラムダ式`(a, b) -> -a.compareTo(b)`でリストの要素を降順にソートします。
+//このラムダ式は、`a`と`b`の自然順序(`compareTo`メソッドによる比較結果)の逆を返すため、リストが降順にソートされます。
+//3. 拡張forループ(`for (Integer num : list)`)を使って、
+//ソートされたリストの要素を一つずつ取り出し、`System.out.println`メソッドで出力します。
+//
+//結果として、リストの要素が降順にソートされた状態で出力されるため、コンソールには`3 2 1`と表示されます。
+//
 
 
 
