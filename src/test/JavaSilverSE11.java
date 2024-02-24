@@ -3,11 +3,8 @@ package test;
 ////import java.util.ArrayList;
 public class JavaSilverSE11 {
 	public static void main(String[] args) {
-//}
-//				System.out.println("JavaSilverSE11");
+		System.out.println("JavaSilverSE11!!!!");
 				
-				
-			
 		
 		
 //		第1章
