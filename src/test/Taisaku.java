@@ -5,8 +5,10 @@ public class Taisaku {
 		  System.out.println("終わる?");
 		
 		
-		// JavaSilverSE11_1 
-		 //のコード　ここに移して。
+		// JavaSilverSE11_1 のコード　ここに移して。
+		  //⇨//のコードじゃない
+		  //後で確認する
+		 
 		
 		
 		
