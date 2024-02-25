@@ -3,6 +3,8 @@ package test;
 public class Shosinsha1 {
 	public static void main(String[] args) {
 		
+		
+		
 		//条件分岐・制御文
 		//プログラミングで文を実行させる順番のことを制御構造という。
 //		制御構造には3つの構造がある。
