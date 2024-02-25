@@ -1,6 +1,6 @@
 package test;
 
-public class Study0 {
+public class Bronze {
 	public static void main(String[] args) {
 		System.out.println("こんにちは///");
 
