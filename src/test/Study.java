@@ -89,3 +89,4 @@ public class Study {
 	    System.out.println("大きいのは" + m + "です");
 	}
 }
+
