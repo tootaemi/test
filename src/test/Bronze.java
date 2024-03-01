@@ -87,6 +87,9 @@ public class Bronze {
 		
 		
 		
+		
+		
+		
 //		
 //		2-2,　算術演算子
 //		point!
