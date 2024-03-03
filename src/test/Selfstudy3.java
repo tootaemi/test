@@ -9,7 +9,6 @@ public class Selfstudy3 {
 //		System.out.println("私の年齢は" + age);
 //		age = 28;
 //		System.out.println("・・・いや、本当の年齢は" + age);
-//		System.out.println("Selfstudy3");
 		
 		//コンソールに「私の年齢は21
 		//・・・いや、本当の年齢は28」と表示される
