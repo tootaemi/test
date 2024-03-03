@@ -511,6 +511,10 @@ public class Bronze {
 		//3日目
 		//4,繰り返し構文
 		
+		明日復習したいとこ
+		p106〜
+		chatGTPに質問
+		
 		
 		
 		
