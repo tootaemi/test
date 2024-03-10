@@ -424,10 +424,8 @@ public class Bronze1 {
 //		そして、`ConcreteSample`クラスがこの`abstract`メソッドを実装（オーバーライド）することで、
 //		`AbstractSample`クラスの具象実装を提供します。
 		
-		
 		//13日目
 		//コレクション
-		
 		
 		
 		
