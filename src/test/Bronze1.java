@@ -384,6 +384,49 @@ public class Bronze1 {
 		//12日目
 		//抽象化プログラミング
 		
+		//12日目のおさらい
+//		
+//		Q3. 次のコードの修正方法として正しいもの
+//		
+//		public class AbstractSample {
+//			public abstract void hello();
+//			public void test() {
+//				hello();
+//			}
+//		}
+//		
+//		public class ConcreteSample extends AbstractSample {
+//			public void hello() {
+//				System.out.println("hello");
+//			}
+//		}
+//		⇨　AbstractSampleクラスを宣言する時にabstractキーワードをつけて宣言する
+//		が正解なのですがどの部分に修正を加えるのでしょうか。
+//		
+//		指摘されたコードに関して、`AbstractSample`クラスが`abstract`メソッドを持っているため、
+//		`AbstractSample`クラス自体も`abstract`で宣言する必要があります。
+//		`abstract`メソッド（この場合は`hello`メソッド）を持つクラスは、
+//		そのクラスのインスタンスを直接作成することができないため、クラス自体を
+//		`abstract`として宣言しなければなりません。このようなメソッドは、
+//		サブクラスでオーバーライドされることを意図しています。
+//
+//		修正するべき部分は、`AbstractSample`クラスの宣言部分です。以下のように修正します：
+//
+//		public abstract class AbstractSample {
+//		    public abstract void hello();
+//		    public void test() {
+//		        hello();
+//		    }
+//		}
+//
+//		この変更により、`AbstractSample`クラスは`abstract`クラスとして正しく宣言され、
+//		`abstract`メソッド`hello`を含むことができるようになります。
+//		そして、`ConcreteSample`クラスがこの`abstract`メソッドを実装（オーバーライド）することで、
+//		`AbstractSample`クラスの具象実装を提供します。
+		
+		
+		//13日目
+		//コレクション
 		
 		
 		
