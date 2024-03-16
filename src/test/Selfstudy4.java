@@ -323,22 +323,134 @@ public class Selfstudy4 {
 //		配列 scores の行数を出力するため、この場合は 2 が出力されます。
 //		2行目のコードであるため、2 が出力されることになります。
 //
-
+//
+//		第5章
+//		メソッド
+//		
+		//同じ配列を参照していることを確認する。
 		
+//		public static void incArray ( int[] array ) {
+//			for ( int i = 0 ; i < array.length; i++ ) {
+//				array[ i ]++;
+//			}
+//		}
+//		public static void main ( String[] args ) {
+//			int[] array = { 1, 2, 3 };
+//			incArray ( array );
+//			for ( int i : array ) {
+//				System.out.println ( i );
+//			}
+//		}
+//	}
+//		
+//	このコードは、与えられた整数配列の各要素を1ずつ増やす
+//	`incArray` メソッドと、そのメソッドを使用して配列を操作する `main` メソッドからなります。
+//	具体的には、配列 `{1, 2, 3}` を `{2, 3, 4}` に変更しています。
+//
+//	public class Main {
+//	    // 配列の各要素を1ずつ増やすメソッド
+//	    public static void incArray(int[] array) {
+//	        for (int i = 0; i < array.length; i++) {
+//	            array[i]++;
+//	        }
+//	    }
+//
+//	    public static void main(String[] args) {
+//	        int[] array = {1, 2, 3}; // 初期配列を定義
+//	        incArray(array); // incArrayメソッドで配列を変更
+//	        for (int i : array) {
+//	            System.out.println(i); // 変更後の配列を出力
+//	        }
+//	    }
+//	}
+//
+//	このコードを実行すると、次のような出力が得られます：
+//
+//	```
+//	2
+//	3
+//	4
+//	```
+//
+//	つまり、`incArray` メソッドによって配列の要素がそれぞれ1ずつ増加し、
+//	その結果が `main` メソッドで表示されます。
+//		
+//		
+//	戻り値が配列の場合
+//		public class Main {
+//			public static int[ ] makeArray ( int size ) {
+//				int[ ] newArray = new int [ size ];
+//				for ( iint i = 0 ; i < newArray.length ; i++ ) {
+//					newArray [ i ] = i;
+//				}
+//				return newArray;
+//			}
+//			public static void main ( String[ ] args ) {
+//				int[ ] array = makeArray ( 3 );
+//				for ( int i : array ) {
+//					System.out.println ( i );
+//				}
+//			}
+//		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+//		このコードは、指定されたサイズの整数配列を作成し、その配列を作成する `makeArray` メソッドと、
+//		そのメソッドを使用して配列を生成し出力する `main` メソッドからなります。
+//
+//		public class Main {
+//		    // 指定されたサイズの整数配列を作成するメソッド
+//		    public static int[] makeArray(int size) {
+//		        int[] newArray = new int[size]; // 指定されたサイズの配列を生成
+//		        for (int i = 0; i < newArray.length; i++) {
+//		            newArray[i] = i; // 配列の各要素にインデックスの値を代入
+//		        }
+//		        return newArray; // 生成した配列を返す
+//		    }
+//
+//		    public static void main(String[] args) {
+//		        int[] array = makeArray(3); // makeArrayメソッドで配列を作成
+//		        for (int i : array) {
+//		            System.out.println(i); // 作成した配列を出力
+//		        }
+//		    }
+//		}
+//		
+//		
+//		
+//		
+//		
+//		```
+//
+//		このコードを実行すると、次のような出力が得られます：
+//
+//		```
+//		0
+//		1
+//		2
+//		```
+//
+//		つまり、`makeArray` メソッドによって指定されたサイズの配列が生成され、
+//		その各要素にはインデックスの値が代入されます。その結果、`main` メソッドで配列が表示されます。
+//		
+//		
+//		
+//		0、1、2の順で出力される理由は、配列が0から始まるインデックスを持つためです。
+//		Javaでは配列のインデックスは0から始まります。したがって、`makeArray` メソッドで配列を作成し、
+//		その要素にはインデックスの値が代入されています。具体的には、配列の最初の要素には
+//		インデックス0が、2番目の要素にはインデックス1が、3番目の要素にはインデックス2が代入されます。
+//
+//		ここで、配列のインデックスとは、配列内の要素の位置を示す数値です。
+//		例えば、配列 `array` のインデックス0の要素は `array[0]`、
+//		インデックス1の要素は `array[1]`、インデックス2の要素は `array[2]` となります。
+//
+//		したがって、`makeArray` メソッドで作成される配列は次のようになります：
+//
+//		- `array[0] = 0`
+//		- `array[1] = 1`
+//		- `array[2] = 2`
+//
+//		そのため、`main` メソッドで配列を出力すると、0、1、2の順で要素が表示されることになります。
+//		
+//		
 		
 		
 		
