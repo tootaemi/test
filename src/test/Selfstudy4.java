@@ -480,6 +480,8 @@ public class Selfstudy4 {
 		//第10章
 		//カプセル化
 		
+		第11章
+		継承
 		
 		
 		
