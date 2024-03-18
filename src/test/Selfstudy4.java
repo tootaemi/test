@@ -483,6 +483,8 @@ public class Selfstudy4 {
 		//第11章
 		//継承
 		
+		//第12章
+		//高度な継承
 		
 		
 		
