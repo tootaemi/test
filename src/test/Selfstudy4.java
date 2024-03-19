@@ -488,19 +488,169 @@ public class Selfstudy4 {
 		
 		//第13章
 		//多態性
+		//多態性とは、クラスの振る舞いが、インスタンス生成元になったクラスの種類によって変わることを意味する。
+		//多態性は、ポリモーフィズムとも呼ばれる。
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		//ザックリ
+//		
+//		Character c = new SuperHero( ); //OK
+//		Sword s = new Hero( );   //エラー
+//		Flower f = new Fish( );　　//エラー
+//		Phone p = new Coffee( );　　//エラー
+//		
+//		左辺と右辺の型が異なる場合はエラーになる。
+//
+//		
+//		提供されたコードは、Javaのクラスとインスタンスを使ったもののようですが、いくつかの問題があります。
+//		正しいコードを理解するためには、各クラスとその関係性について正確に理解する必要があります。
+//		ここでは、一般的な例として解説します。
+//
+//		```java
+//		// Characterクラスの定義
+//		class Character {
+//		    // キャラクターの行動を表すメソッド
+//		    public void action() {
+//		        System.out.println("Character is performing an action.");
+//		    }
+//		}
+//
+//		// SuperHeroクラスはCharacterクラスを継承しています
+//		class SuperHero extends Character {
+//		    // スーパーヒーロー固有の行動を表すメソッド
+//		    public void fly() {
+//		        System.out.println("SuperHero is flying.");
+//		    }
+//		}
+//
+//		// Swordクラスの定義
+//		class Sword {
+//		    // 剣の行動を表すメソッド
+//		    public void attack() {
+//		        System.out.println("Sword is attacking.");
+//		    }
+//		}
+//
+//		// HeroクラスはSwordクラスを持っています
+//		class Hero extends Sword {
+//		    // ヒーロー固有の行動を表すメソッド
+//		    public void defend() {
+//		        System.out.println("Hero is defending.");
+//		    }
+//		}
+//
+//		// Flowerクラスの定義
+//		class Flower {
+//		    // 花の行動を表すメソッド
+//		    public void bloom() {
+//		        System.out.println("Flower is blooming.");
+//		    }
+//		}
+//
+//		// Fishクラスの定義
+//		class Fish {
+//		    // 魚の行動を表すメソッド
+//		    public void swim() {
+//		        System.out.println("Fish is swimming.");
+//		    }
+//		}
+//
+//		// Phoneクラスの定義
+//		class Phone {
+//		    // 電話の行動を表すメソッド
+//		    public void call() {
+//		        System.out.println("Phone is making a call.");
+//		    }
+//		}
+//
+//		// Coffeeクラスの定義
+//		class Coffee extends Phone {
+//		    // コーヒー固有の行動を表すメソッド
+//		    public void drink() {
+//		        System.out.println("Coffee is being drunk.");
+//		    }
+//		}
+//
+//		public class Main {
+//		    public static void main(String[] args) {
+//		        // SuperHeroクラスのインスタンスを生成し、Character型の変数に代入
+//		        Character c = new SuperHero();
+//		        // Heroクラスのインスタンスを生成し、Sword型の変数に代入
+//		        Sword s = new Hero();
+//		        // Fishクラスのインスタンスを生成し、Flower型の変数に代入
+//		        Flower f = new Fish();
+//		        // Coffeeクラスのインスタンスを生成し、Phone型の変数に代入
+//		        Phone p = new Coffee();
+//
+//		        // 各インスタンスのメソッドを呼び出して、それぞれの行動を実行
+//		        c.action(); // Character is performing an action.
+//		        s.attack(); // Sword is attacking.
+//		        f.bloom(); // Error: Fishクラスにはbloomメソッドがないためエラーが発生します。
+//		        p.call(); // Phone is making a call.
+//		    }
+//		}
+//		```
+//上記のコードは、キャラクター、剣、花、魚、電話、コーヒーというさまざまなクラスとその関係性を示しています。
+//それぞれのクラスは特定の行動を表すメソッドを持ち、継承関係や組み合わせによって異なる振る舞いを示します。		
+//		
+//	
+//	オブジェクト指向はイメージが大事。
+////	
+////		
+////	練習問題、13-2　　p520、521
+//	public final class A extends Y {
+//			public void a ( ) { System.out.print(( "Aa"); }
+//			public void b ( ) { System.out.print(( "Ab"); }
+//			public void c ( ) { System.out.print(( "Ac"); }
+//		}
+//		public final class B extends Y {
+//			public void a ( ) { System.out.print(( "Ba"); }
+//			public void b ( ) { System.out.print(( "Bb"); }
+//			public void c ( ) { System.out.print(( "Bc"); }
+//		}
+//		public interface X {void a (); }
+//		public abstract class Y implements X {
+//			public abstract void a ( );
+//			public abstract void b ( );
+//		}
+//
+//	このとき、次の問いに答えてください。
+//	①「X obj=newA ();」としてAインスタンスを生成した後、変数objに対して呼ぶことができるメソッドを
+//	a(),b(),c()の中から全て挙げてください。
+//	
+//	②「Y y1 = new A(); Y y2 = new B();」としてAとBのインスタンスを生成した後、「y1.a();y2.a();」を
+//	実行した場合に画面に表示される内容を答えてください。
+//
+//	
+//	次の問題について解説します。
+//
+//	① 「X obj = new A();」としてAインスタンスを生成した後、変数objに対して呼ぶことができるメソッドは、
+//	Xインターフェースで定義されたメソッドa()のみです。
+//
+//	① 「X obj=new A();」としてAインスタンスを生成した場合、変数objに対して
+//	呼ぶことができるメソッドは、Xインターフェースで定義されているメソッドa()のみ。
+//	これは、インスタンスの生成方法に関わらず、インターフェースで定義されたメソッドは
+//	その型を持つ変数に対して呼び出すことができます。
+//	したがって、変数objに対して呼び出せるメソッドは「a()」のみです。
+//	
+//
+//	② 「Y y1 = new A(); Y y2 = new B();」としてAとBのインスタンスを生成した後、
+//	「y1.a(); y2.a();」を実行すると、次のように表示されます。
+//
+//	- 「y1.a();」はAクラスのメソッドa()を呼び出し、「Aa」と表示されます。
+//	- 「y2.a();」はBクラスのメソッドa()を呼び出し、「Ba」と表示されます。
+//
+//	したがって、画面に表示される内容は「AaBa」となります。	
+//		
 
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
