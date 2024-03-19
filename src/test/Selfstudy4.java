@@ -486,7 +486,8 @@ public class Selfstudy4 {
 		//第12章
 		//高度な継承
 		
-		
+		//第13章
+		//多態性
 		
 		
 		
