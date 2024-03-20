@@ -677,16 +677,41 @@ public class Selfstudy4 {
 //		第15章のまとめ　OK
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+//		
+//		 public final class A extends Y {
+//			   public void a ( ) { System.out.print(( "Aa"); }
+//			   public void b ( ) { System.out.print(( "Ab"); }
+//			   public void c ( ) { System.out.print(( "Ac"); }
+//			  }
+//			  public final class B extends Y {
+//			   public void a ( ) { System.out.print(( "Ba"); }
+//			   public void b ( ) { System.out.print(( "Bb"); }
+//			   public void c ( ) { System.out.print(( "Bc"); }
+//			  }
+//			  public interface X {void a (); }
+//			  public abstract class Y implements X {
+//			   public abstract void a ( );
+//			   public abstract void b ( );
+//			  }
+//
+//		
+//
+//				 「Y y1 = new A(); Y y2 = new B();」としてAとBのインスタンスを生成した後、
+//				 「y1.a();y2.a();」を実行した場合に画面に表示されるのが「Aa」と「Ba」なのは
+//				 public void a が呼び出されてるからなのでしょうか。
+//				 
+//				 以下の理由から、「Y y1 = new A(); Y y2 = new B();」を実行した後、
+//				 「y1.a(); y2.a();」を実行すると、画面には「Aa」と「Ba」が表示されます。
+//
+//				 1. `Y`クラスは`X`インターフェースを実装しており、`a()`メソッドを持っています。
+//				 2. `Y y1 = new A();`としてAのインスタンスを生成すると、
+//				 `y1`は`Y`型の変数ですが、実際にはAのインスタンスを指しています。
+//				 3. 同様に、`Y y2 = new B();`としてBのインスタンスを生成すると、
+//				 `y2`も`Y`型の変数ですが、実際にはBのインスタンスを指しています。
+//				 4. `y1.a();`と`y2.a();`を実行すると、それぞれAのインスタンスの
+//				 `a()`メソッドとBのインスタンスの`a()`メソッドが呼び出され、
+//				 それぞれのクラスに定義された内容が表示されます。
+//		
 		
 		
 		
