@@ -21,3 +21,6 @@
     <div class="text-center">
       <%= paginate @customers %>
     </div>
+    
+    
+    
