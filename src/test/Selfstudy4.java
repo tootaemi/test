@@ -776,6 +776,19 @@ public class Selfstudy4 {
 		
 		
 		
+//		
+//		java bronzu
+//		インクリメントの復習
+//		if文、関数の復習
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
