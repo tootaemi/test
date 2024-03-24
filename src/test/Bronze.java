@@ -1,7 +1,5 @@
 package test;
 
-import java.util.Stack;
-
 public class Bronze {
 	public static void main(String[] args) {
 //		System.out.println("こんにちは。");
@@ -943,8 +941,7 @@ public class Bronze {
 //		        robot.setName("Java Robot"); // ロボットに名前を設定
 //		        robot.sayHello(); // ロボットが挨拶
 //	
-//		        これにより、Hello, my name is Java Robot. 
-		　　　　　//というメッセージがコンソールに出力されるはず.
+//		        これにより、Hello, my name is Java Robot.  というメッセージがコンソールに出力されるはず.
 //		
 //		Stack stack = new Stack();
 //		stack.push(1);
