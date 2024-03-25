@@ -495,6 +495,9 @@ public class Study {
 		//直接ソースコードからRubyをビルドしてインストールから開始。
 		//本は読んだのに3/25コミットし忘れた
 		
+		https://teratail.com/questions/169281
+			この記事からやる
+		
 		
 		
 		
