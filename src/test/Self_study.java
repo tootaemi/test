@@ -137,27 +137,106 @@ HtML
 
 2024年5月1日
 //タイピングの練習
-レスポンシブ対応
-ページを作成してみよう
-セレクトボックスやテキストエリア
-inputタグについて
-よく使う擬似クラス
-透明化について
-z-indexについて
-はみ出し部分の隠し方
+.レスポンシブ対応
+.ページを作成してみよう
+.セレクトボックスやテキストエリア
+.inputタグについて
+.よく使う擬似クラス
+.透明化について
+.z-indexについて
+.はみ出し部分の隠し方
 （↑見る順番逆かも。。）
 
 （ここから一番下の動画視聴開始）
-HTMLファイルの作り方
-DOCTYPE宣言とHTMLタグ
-headタグ
-bodyタグ
-見出しタグと段落タグ
-リンクを設置する方法（途中）
+.HTMLファイルの作り方
+.DOCTYPE宣言とHTMLタグ
+.headタグ
+.bodyタグ
+.見出しタグと段落タグ
+.リンクを設置する方法（途中）
 
 
 2024年5月2日
 //タイピングの練習
+.リンクを設置する方法
+
+個人的にすること
+→　sublime text をブラウザで見る方法
+簡単な方法があってすぐ自己解決した！
+解決方法
+↓
+
+Sublime Textはテキストエディタであり、ブラウザで直接表示することはできません。
+ただし、Sublime Textで作成したファイル（例えば、HTMLやCSSファイルなど）は、
+ブラウザで閲覧することができます。
+
+以下の手順で、Sublime Textで作成したHTMLファイルをブラウザで表示することができます。
+
+1,Sublime TextでHTMLファイルを開きます。
+2.ファイルを保存します（Ctrl + SまたはCmd + Sを使用）。
+3.保存したHTMLファイルをブラウザで開きます。一般的に、ファイルをダブルクリックするか、ブラウザのメニューから「ファイルを開く」オプションを使用します。
+4.ブラウザでHTMLファイルが表示されます。
+これにより、Sublime Textで編集したHTMLコードがブラウザで表示されます。
+同様に、CSSファイルやJavaScriptファイルもブラウザで表示できます。
+
+ここまで！
+
+<img src="">
+・画像を読み込む
+.リストや表を作る方法
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>テスト</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li>りんご</li>
+					<li>バナナ</li>
+					<li>ぶどう</li>
+				</ul>
+				<ol>
+					<li>りんご</li>
+					<li>バナナ</li>
+					<li>ぶどう</li>
+				</ol>
+			</nav>
+		</header>
+		<section></section>
+		<h1>今日の天気は晴れです</h1>
+		<p>前日は大雨でしたが今日は終日晴れるそうです</p>
+		<a href="https://rs.sakura.ad.jp/?gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHJAdjwvrWoZgi1dI9PWgxMXI7VWjydwL2n5i7UloiPMrRNDZYaeFrgaAs9yEALw_wcB">詳しくはこちら</a>
+		<img src="スクリーンショット 2023-07-17 12.34.57.png">
+		<section></section>
+		<table>
+			<tr>
+				<th>学校名</th>
+				<th>男女比率</th>
+				<th>人数</th>
+			</tr>
+			<tr>
+				<td>プログラミングスクールA</td>
+				<td>8：2</td>
+				<td>100人</td>				
+			</tr>
+			<tr>
+				<td>プログラミングスクール</td>
+				<td>6：4</td>
+				<td>50人</td>				
+			</tr>					
+		</table>
+		<section></section>
+		<footer></footer>
+	</body>
+</html>
+
+
+・CSSとは？
+
 
 
 
