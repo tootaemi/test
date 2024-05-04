@@ -185,57 +185,8 @@ Sublime Textはテキストエディタであり、ブラウザで直接表示�
 ・画像を読み込む
 .リストや表を作る方法
 
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>テスト</title>
-	</head>
-	<body>
-		<header>
-			<nav>
-				<ul>
-					<li>りんご</li>
-					<li>バナナ</li>
-					<li>ぶどう</li>
-				</ul>
-				<ol>
-					<li>りんご</li>
-					<li>バナナ</li>
-					<li>ぶどう</li>
-				</ol>
-			</nav>
-		</header>
-		<section></section>
-		<h1>今日の天気は晴れです</h1>
-		<p>前日は大雨でしたが今日は終日晴れるそうです</p>
-		<a href="https://rs.sakura.ad.jp/?gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHJAdjwvrWoZgi1dI9PWgxMXI7VWjydwL2n5i7UloiPMrRNDZYaeFrgaAs9yEALw_wcB">詳しくはこちら</a>
-		<img src="スクリーンショット 2023-07-17 12.34.57.png">
-		<section></section>
-		<table>
-			<tr>
-				<th>学校名</th>
-				<th>男女比率</th>
-				<th>人数</th>
-			</tr>
-			<tr>
-				<td>プログラミングスクールA</td>
-				<td>8：2</td>
-				<td>100人</td>				
-			</tr>
-			<tr>
-				<td>プログラミングスクール</td>
-				<td>6：4</td>
-				<td>50人</td>				
-			</tr>					
-		</table>
-		<section></section>
-		<footer></footer>
-	</body>
-</html>
-
-
 ・CSSとは？
+
 
 2024年5月3日
 //タイピングの練習
@@ -257,8 +208,7 @@ Sublime Textはテキストエディタであり、ブラウザで直接表示�
 
 2024年5月4日
 //タイピングの練習
-
-
+・HTMLとは？　から　・よくあるクラスの指定方法　まで復習完了
 
 
 
