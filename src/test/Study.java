@@ -480,11 +480,290 @@ public class Study {
 //		このように、九九の表が画面に正しく表示されます。
 //		
 		
-
-		
-		
-		
-		
-		
 	}
+}
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>テスト</title>
+		<link rel="stylesheet" href="stylesheet.css">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li>トップページ</li>
+					<li>会社概要</li>
+					<li>お問合せ</li>
+<!-- 					<li class="apple">りんご</li>
+					<li class="color-wtihe">バナナ</li>
+					<li class="color-wtihe">ぶどう</li> -->
+				</ul>
+<!-- 				<ol class="number">
+					<li class="apple">りんご</li>
+					<li>バナナ</li>
+					<li>ぶどう</li>
+				</ol> -->
+			</nav>
+		</header>
+		<section id="top-wrapper" >
+		<h1>今日の天気は晴れです</h1>
+		<p>前日は大雨だったのですが、今朝から太陽が出てきて今日は終日晴れるそうです</p>
+		<a href="https://rs.sakura.ad.jp/?gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHJAdjwvrWoZgi1dI9PWgxMXI7VWjydwL2n5i7UloiPMrRNDZYaeFrgaAs9yEALw_wcB">詳しくはこちら</a>
+		<a href="https://rs.sakura.ad.jp/?gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHJAdjwvrWoZgi1dI9PWgxMXI7VWjydwL2n5i7UloiPMrRNDZYaeFrgaAs9yEALw_wcB">詳しくはこちら</a>
+		<a href="https://rs.sakura.ad.jp/?gad_source=1&gclid=Cj0KCQjw0MexBhD3ARIsAEI3WHJAdjwvrWoZgi1dI9PWgxMXI7VWjydwL2n5i7UloiPMrRNDZYaeFrgaAs9yEALw_wcB">詳しくはこちら</a>
+
+		<!-- <img src="スクリーンショット 2023-07-17 12.34.57.png"> -->
+		</section>
+		<table>
+			<tr>
+				<th>学校名</th>
+				<th>男女比率</th>
+				<th>人数</th>
+			</tr>
+			<tr>
+				<td>プログラミングスクールA</td>
+				<td>8：2</td>
+				<td>100人</td>				
+			</tr>
+			<tr>
+				<td>プログラミングスクール</td>
+				<td>6：4</td>
+				<td>50人</td>				
+			</tr>					
+		</table>
+<section>
+	<div class="parent">
+        <div class="children01">子要素01</div>
+        <div class="children02">子要素02</div>
+        <div class="children03">子要素03</div>
+        <div class="children04">子要素04</div>
+    </div>
+</section>
+<section id="over">
+<p>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+</section>
+<from>
+	<div>お名前</div>
+	<input type="text">
+		<div>電話番号</div>
+	<input type="tel">
+		<div>メールアドレス</div>
+	<input type="email">
+		<div>パスワード</div>
+	<input type="password">
+			<div>性別</div>
+	<input type="radio">男性
+	<input type="radio">女性
+	<div>年齢</div>
+	<input type="checkbox">10代
+	<input type="checkbox">20代
+	<input type="checkbox">30代
+	<div>都道府県</div>
+	<select>
+		<option>東京都</option>
+		<option>大阪府</option>
+	</select>
+	<div>お問い合わせ内容</div>
+	<textarea></textarea>
+	<input type="submit">
+</from>
+		<footer></footer>
+	</body>
+</html>
+
+
+h1 {
+    color: red;
+    background-color: #fff;
+    font-size: 30px;
+    font-weight: normal;
+    font-style: italic;
+/*    text-align: center;*/
+/*    text-align: right;*/
+    text-align: left;
+/*    text-align: justify;*/
+/*height:  300pt;*/
+/*width: 50px;*/
+padding: 15px 5px;
+margin: 0;
+/*border: 1pt solid red;*/
+/*border-top: 5pt solid red;*/
+/*border-right: 5pt solid red;*/
+/*border-bottom: 5pt solid red;*/
+border-left: 5px solid;
+/*position: relative;
+top: 200pt;
+left: 300pt;*/
+/*position: absolute;
+top: 100pt;
+left: 500pt;
+*/
+/*position: fixed;　　/* 固定 */
+/*top: 0px;*/
+}
+
+
+body {
+    height: 1000px;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+nav li{
+    padding: 10px 15px;
+    transition: all 0.2s;
+}
+
+header {
+/*    display: none;*/
+    display: block;
+    background-color: rgba(0, 0, 0,0.7);
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+section{
+	position: relative;
+}
+
+/*li{
+    background-color: blue;
+}*/
+
+a:hover,li:hover{
+    background-color: red;
+}
+
+li:active{
+    background-color: blue;
+}
+
+/*td:first-child {
+    background-color: red;
+}*/
+/*td:last-child {
+    background-color: red;
+}*/
+td:nth-child(2) {
+    background-color: red;
+}
+
+
+a{
+	display: inline-block;
+	/*display: block;
+	display: none;
+*/
+    text-decoration: none;
+    transition: all 0.2s;
+
+}
+
+
+
+p{
+	font-weight: bold;
+	text-align: justify;
+}
+
+body {
+/*    background-image: url('スクリーンショット 2023-07-17 12.34.57.png');*/
+    background-repeat: no-repeat;
+/*    background-size: contain;*/
+     /*background-size:  cover;
+     background-position: pottom center;
+/*   */  background-position: top center;*/
+
+}
+
+
+/*body{
+	background-color: blue;
+}
+*/
+
+
+.apple{
+    background-color: red;
+} 
+
+
+/*ol li{
+    background-color: blue;
+}*/
+
+.number li div{
+    background-color: blue;
+}
+
+.color-wtihe{
+    color: #fff;
+}
+
+
+#top-wrapper{
+    background-color: #fff;
+}
+
+
+.parent{
+        display: flex;
+        width: 100%;
+    text-align: center;
+/*    flex-direction: row;*/
+/*    flex-direction: row-reverse;*/
+/*    flex-direction: column;*/
+/*    flex-direction: column-reverse;*/
+/*justify-content: center;*/
+/*justify-content: flex-end;*/
+/*justify-content: space-between;*/
+/*justify-content: space-around;*/
+flex-wrap: wrap;
+/*flex-wrap: wrap-reverse;*/
+/*align-items: center;*/
+align-items: flex-start;
+height: 100px;
+}
+
+
+.parent div{
+/*    width: 50%;*/
+    width: 33%;
+    background-color: red;
+}
+
+#over{
+    width: 300px;
+    background-color: #000;
+    color: #fff;
+    height: 100px;
+    overflow: hidden;
+/*    overflow: scroll;*/
+/*    overflow: auto;*/
+/*    margin: auto;*/
+    margin-left: auto;
+    margin: 0 auto;
+}
+
+ul,ol{
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
